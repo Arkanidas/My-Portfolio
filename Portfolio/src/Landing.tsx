@@ -1,18 +1,21 @@
-import { useState } from 'react'
-import '../src/styles/atropos.css'
+import { useState } from 'react';
+import '../src/styles/atropos.css';
+import Navigation from '../src/components/Navigation';
 
 function Landing() {
 
 
   return (
-    <>
-     
-<h1>Jesus</h1>
+    <div className='Landing'>
+    <Navigation/>
+    
+  
 
 
+    
 
-
-    </>
+    
+    </div>
   )
 }
 
