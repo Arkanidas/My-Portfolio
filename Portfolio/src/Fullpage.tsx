@@ -8,17 +8,19 @@ import styled from 'styled-components';
 export default function Fullpage() {
 
 
+interface Pagescrolling {
 
-
-
+Fullpages:string;
+FullpageNavigation:string;
+}
 
 
 
   return (
     <div>
      
-      <Fullpages>
-    <FullpageNavigation />
+      <Fullpages<Pagescrolling>>
+    <FullpageNavigation<Pagescrolling>/>
      <FullPageSections>
 
 
