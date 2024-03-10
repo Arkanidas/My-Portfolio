@@ -3,24 +3,18 @@ import About from "./components/About";
 import Contact from "./components/Contact.tsx"
 import Landing from "./Landing.tsx"
 import "./styles/styles.css"
-import styled from 'styled-components';
+
 
 export default function Fullpage() {
 
 
-interface Pagescrolling {
-
-Fullpages:string;
-FullpageNavigation:string;
-}
-
 
 
   return (
-    <div>
+    <div className="scrollable-section">
      
-      <Fullpages<Pagescrolling>>
-    <FullpageNavigation<Pagescrolling>/>
+      <Fullpages>
+    <FullpageNavigation/>
      <FullPageSections>
 
 
