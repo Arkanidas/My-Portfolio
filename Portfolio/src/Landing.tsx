@@ -10,7 +10,9 @@ import Navigation from '../src/components/Navigation';
     <Navigation/>
     
     <h1 style={{fontSize:"40px", color: "red", marginTop:"200px"}}>hello how are u wefwefwef wef wef wef we we we we</h1>
+    <h1 style={{fontSize:"40px", color: "red",}}>hello how are u wefwefwef wef wef wef we we we we</h1>
 
+    <h1 style={{fontSize:"40px", color: "red",}}>hello how are u wefwefwef wef wef wef we we we we</h1>
 
   
     </div>

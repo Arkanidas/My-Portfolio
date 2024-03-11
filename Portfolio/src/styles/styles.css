@@ -1,8 +1,6 @@
-
 body{
     margin:0;
     padding:0;
-   
 }
 
 
@@ -11,12 +9,20 @@ html{
 }
 
 .Navigation{
-    height: 120px;
+    height: 7.4em;
     width: 100%;
-    background-color: rgb(207, 195, 195);
     position: fixed;
     top:0;
+    opacity: 1;
 }
+
+
+
+.Navigation:hover{
+    backdrop-filter: brightness(95%);
+}
+
+
 
 .Link-selection{
 display: flex;
@@ -25,6 +31,12 @@ flex-direction: row;
 margin-right:5%;
 gap:4em;
 justify-content: end;
+align-items: baseline;
+margin-top: 10px;
+font-family: "Kalam";
+font-size: 20px;
+opacity: 1;
+
 
 }
 
@@ -37,8 +49,9 @@ justify-content: end;
     position:fixed;
     top:0;
     height:100vh;
-    background-color: antiquewhite;
-  
+    background: linear-gradient(315deg, hsla(309, 7%, 42%, 1) 0%, hsla(268, 100%, 83%, 1) 0%, hsla(207, 100%, 81%, 1) 100%);
+    
+
 }
 
 .About{
