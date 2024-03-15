@@ -13,6 +13,7 @@
     "@ap.cx/react-fullpage": "^0.3.0",
     "@fullpage/react-fullpage": "^0.1.42",
     "atropos": "^2.0.2",
+    "framer-motion": "^11.0.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.2",

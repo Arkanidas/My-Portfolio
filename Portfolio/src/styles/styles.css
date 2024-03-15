@@ -13,16 +13,21 @@ html{
     width: 100%;
     position: fixed;
     top:0;
-    opacity: 1;
+
 }
 
 
 
 .Navigation:hover{
-    backdrop-filter: brightness(95%);
+    background: none repeat scroll 0 0 #ced3fc ;
+    transition: all 0.2s ease-out 0.5s!important;
+    -webkit-transition: all 1s ease-out 0.01s!important;
+  
 }
 
-
+a, a:visited{
+ text-decoration: none;
+}
 
 .Link-selection{
 display: flex;
