@@ -13,10 +13,8 @@ html{
     width: 100%;
     position: fixed;
     top:0;
-
+    border-bottom: 1px solid black;
 }
-
-
 
 .Navigation:hover{
     background: none repeat scroll 0 0 #ced3fc ;
@@ -79,8 +77,77 @@ opacity: 1;
     display: none;  /* Safari and Chrome */
 }
 
-.scrollable-section{
-    scrollbar-width: none;  
-    -ms-overflow-style: none;
-    overflow-y: scroll; 
-}
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 40px;
+    height:7px;
+    border-radius: 7px;
+    background-color: #a81414;
+    margin: 4px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  
+   
+    .bar:active .bar:nth-child(1){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .bar:active .bar:nth-child(2){
+        opacity:0;
+    }
+
+    .bar:active .bar:nth-child(3){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+
+
+    
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    .hamburger-menu {
+      display: block;
+      width:50px;
+      height:40px;
+      float:right;
+      margin-right:20px;
+      margin-top: 3%;
+      padding:7px;
+    }
+  
+    .Link-selection {
+      display: none;
+    }
+  
+    .show-links {
+      display: block;
+      background-color: aqua;
+      height:260px;
+      width:250px;
+      float:right;
+      font-size: 20px;
+      position: fixed;
+      z-index:-1;
+      top:0px;
+      right:0px;
+      margin:0;
+      padding:0;
+      border-bottom-left-radius: 10px;
+
+    }
+  
+    .link-paragraph{
+        font-size: 1.4em;
+        margin-left: 50px;
+    
+    }
+  
+  }

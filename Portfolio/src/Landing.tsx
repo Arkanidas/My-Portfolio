@@ -4,7 +4,7 @@ import {AnimatePresence, motion} from 'framer-motion'
 
 
  function Landing() {
-  const [selectedId, setSelectedId] = useState(null)
+
 
   return (
     <div className='Landing'>
