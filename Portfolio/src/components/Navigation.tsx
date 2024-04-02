@@ -5,16 +5,18 @@ import "../styles/styles.css"
 const Navigation = () => {
 
 const [showLinks, setShowLinks] = useState(false);
+const [MenuActive, setMenuActive] = useState(false);
 
 const Togglemenu = () => {
 setShowLinks(!showLinks);
+setMenuActive(!MenuActive);
 }
 
 
   return (
     <div className="Navigation">
 
-<div className="hamburger-menu" onClick={Togglemenu}>
+<div className={`hamburger-menu ${MenuActive ? "burger-active" : ''}`} onClick={Togglemenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

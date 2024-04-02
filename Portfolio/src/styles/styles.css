@@ -13,11 +13,9 @@ html{
     width: 100%;
     position: fixed;
     top:0;
-    border-bottom: 1px solid black;
 }
 
 .Navigation:hover{
-    background: none repeat scroll 0 0 #ced3fc ;
     transition: all 0.2s ease-out 0.5s!important;
     -webkit-transition: all 1s ease-out 0.01s!important;
   
@@ -86,16 +84,15 @@ opacity: 1;
   .bar {
     width: 40px;
     height:7px;
-    border-radius: 7px;
+    border-radius: 10px;
     background-color: #000000;
     margin: 4px 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  
-   
+ 
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1800px) {
 
     .hamburger-menu {
       display: block;
@@ -105,25 +102,27 @@ opacity: 1;
       margin-right:20px;
       margin-top: 35px;
       padding:7px;
+      
     }
 
-    .bar:active .bar:nth-child(1){
-        transform: translateY(-8px) rotate(-45deg);
+    .burger-active .bar{
+   background-color:rgb(93, 93, 93);
+
+
     }
 
-    .bar:active .bar:nth-child(2){
+    .burger-active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .burger-active .bar:nth-child(2){
         opacity:0;
     }
 
-    .bar:active .bar:nth-child(3){
-        transform: translateY(8px) rotate(45deg);
+    .burger-active .bar:nth-child(3){
+        transform: translateY(-12.5px) rotate(130deg);
     }
 
-
-    .bar:hover {
-       background-color: azure;
-      }
-    
   
     .Link-selection {
       display: none;
@@ -131,9 +130,9 @@ opacity: 1;
   
     .show-links {
       display: block;
-      background-color: rgb(221, 255, 255);
-      height:260px;
-      width:250px;
+      background:transparent;
+      height:307px;
+      width:100vw;
       float:right;
       font-size: 20px;
       position: fixed;
@@ -146,7 +145,7 @@ opacity: 1;
       border-bottom-width: 5px;
       border-left-width: 3px;
       border-bottom-color: black;
-      filter: drop-shadow(5px, 5px);
+      backdrop-filter: invert(5%);
     }
   
      .Link-paragraph:hover{
@@ -155,10 +154,20 @@ opacity: 1;
      }
 
     .link-paragraph{
-        font-size: 1.4em;
-        margin-left: 50px;
-        margin-top: 12%;
-        border: 1px solid black;
+       font-size: 1.4em;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-top:15px;
+       padding-bottom:15px;
+       margin-top:20px;
+       margin-bottom:-20px;
+        
+       
+    }
+
+    .link-paragraph:hover{
+       background-color: azure;
     
     }
   
