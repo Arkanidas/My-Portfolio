@@ -25,6 +25,17 @@ a, a:visited{
  text-decoration: none;
 }
 
+.info_container{
+flex-direction: column;
+align-items:center;
+justify-content: center;
+font-size: 20px;
+text-align: center;
+position: relative;
+top: 100px;
+
+}
+
 .Link-selection{
 display: flex;
 list-style: none;
@@ -50,7 +61,7 @@ opacity: 1;
     top:0;
     height:100vh;
     background: linear-gradient(315deg, hsla(309, 7%, 42%, 1) 0%, hsla(268, 100%, 83%, 1) 0%, hsla(207, 100%, 81%, 1) 100%);
-    
+
 
 }
 
@@ -71,7 +82,7 @@ opacity: 1;
 
 .scrollable-section::-webkit-scrollbar{
     overflow-y: scroll;
-    display: none;  /* Safari and Chrome */
+    display: none;  
 }
 
 
@@ -92,7 +103,7 @@ opacity: 1;
  
   }
 
-  @media screen and (max-width: 1800px) {
+  @media screen and (max-width: 1500px) {
 
     .hamburger-menu {
       display: block;
