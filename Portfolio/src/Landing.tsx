@@ -13,8 +13,8 @@ import "./styles/styles.css"
 
     
     <div className='info_container'>
-    <h1>Leon Alexander Aysa</h1>
-    <h3>Hi I'm a Frontend Developer</h3>
+    <h1 className='name'>Leon Alexander Aysa</h1>
+    <h3 className='description'>Hi I'm a Frontend Developer</h3>
 
     </div>
 
