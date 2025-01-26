@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import "./styles/styles.css"
+import "./styles/landingstyle.css"
 import Fullpage from "./Fullpage.tsx"
 
 

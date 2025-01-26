@@ -2,11 +2,10 @@ import Fullpages, {FullPageSections, FullpageSection, FullpageNavigation} from '
 import About from "./components/About";
 import Contact from "./components/Contact.tsx"
 import Landing from "./Landing.tsx"
-import "./styles/styles.css"
+import "./styles/landingstyle.css"
 
 
 export default function Fullpage() {
-
 
 
 

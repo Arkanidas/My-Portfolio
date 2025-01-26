@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sawarabi+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@471&family=Kaushan+Script&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
 /* Different fonts used in pages except Projects */
 .kaushan-script-regular {
     font-family: "Kaushan Script", serif;
@@ -14,10 +12,26 @@
     font-style: normal;
   }
   
+  .pinyon-script-regular {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .agbalumo-regular {
+    font-family: "Agbalumo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 body{
     margin:0;
     padding:0;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -33,30 +47,43 @@ html{
 }
 
 
+
 a, a:visited{
  text-decoration: none;
 }
 
 .info_container{
-flex-direction: column;
-align-items:center;
-justify-content: center;
 text-align: center;
 position: relative;
-top: 100px;
+top: 120px;
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+justify-content: center; 
 
 }
 
+.profile_img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid black;  
+}
+
 .description{
-    font-size: clamp(5px, 5vw, 40px);
-    font-family: arial;
-  
-    color: rgb(178, 59, 59);
+    font-size: clamp(20px, 2.2vw, 36px);
+    font-family: "Agbalumo", serif;
+    color:#214521;
+    margin: 0;
+    display: inline-block;
+    height: 2em; /* Set a fixed height to prevent shifting */
+
 }
 
 .name{
     font-size: clamp(35px, 5vw, 70px);
     font-family: "Kaushan Script", serif;
+
 }
 
 .Link-selection{
@@ -126,7 +153,7 @@ opacity: 1;
  
   }
 
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 770px) {
 
     .hamburger-menu {
       display: block;
@@ -204,5 +231,12 @@ opacity: 1;
        background-color: azure;
     
     }
+    .profile_img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid black;  
+    }
   
   }
+

@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-import "../styles/styles.css"
+import "../styles/landingstyle.css"
 
 const Navigation = () => {
 

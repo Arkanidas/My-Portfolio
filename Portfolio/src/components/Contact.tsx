@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/styles.css"
+import "../styles/landingstyle.css"
 
 export default function Contact() {
   return (
