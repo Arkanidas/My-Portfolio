@@ -60,7 +60,7 @@ display: flex;
 flex-direction: column; 
 align-items: center; 
 justify-content: center; 
-
+z-index:-1;
 }
 
 .profile_img{
@@ -83,7 +83,20 @@ justify-content: center;
 .name{
     font-size: clamp(35px, 5vw, 70px);
     font-family: "Kaushan Script", serif;
+}
 
+.btn_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+   gap:50px;
+   position: relative;
+   top:200px;
+}
+
+.btn{
+  
 }
 
 .Link-selection{
