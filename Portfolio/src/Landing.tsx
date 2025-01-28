@@ -3,15 +3,15 @@ import Navigation from '../src/components/Navigation';
 import Typed from 'typed.js';
 import "./styles/landingstyle.css";
 import profile from "./images/smile.jpeg";
-import { FullpageContext } from '@ap.cx/react-fullpage'; // Import FullpageContext
+import { FullpageContext } from '@ap.cx/react-fullpage'; 
 
-// Define the Fullpage API interface
+
 interface FullpageApi {
   moveSectionDown: () => void;
   moveSectionUp: () => void;
   moveTo: (sectionIndex: number) => void;
   setAllowScrolling: (allow: boolean) => void;
-  // Add other methods as needed
+
 }
 
 function Landing() {
@@ -28,7 +28,7 @@ function Landing() {
       backSpeed: 60,
       startDelay: 500,
       backDelay: 4000,
-      showCursor: true,
+      showCursor: false,
       loop: true,
     });
 
@@ -53,12 +53,12 @@ function Landing() {
         <Navigation />
         <div className="info_container">
           <h1 className="name">Leon Alexander Aysa</h1>
-          <h3 ref={text} className="description" />
+          <h3 ref={text} className="description"/>
           <img src={profile} className='profile_img' alt="Profile" />
         </div>
+
         <div className='btn_container'>
           <button className='btn'>Download CV</button>
-          {/* Add onClick event to navigate to Contact section */}
           <button className='btn' onClick={navigateToContact}>Contact me</button>
         </div>
       </div>
