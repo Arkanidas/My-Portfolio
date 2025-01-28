@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"; 
 import "../styles/landingstyle.css";
-import Projects from "./Projects"; // Import Projects component
-import Landing from "../Landing"; // Import Landing component
+
 
 const Navigation = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -28,10 +28,15 @@ const Navigation = () => {
 
         <ul className={`Link-selection ${showLinks ? "show-links" : ""}`}>
           <li>
-            <p className="link-paragraph">Home</p>
+          <Link to="/" className="link-paragraph">
+              Home
+            </Link>
           </li>
           <li>
-            <p className="link-paragraph">Projects</p>
+          <Link to="/projects" className="link-paragraph">
+              Projects
+            </Link>
+        
           </li>
         </ul>
       </div>
