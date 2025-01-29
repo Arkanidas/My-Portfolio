@@ -42,7 +42,22 @@ function Landing() {
          
           <button className='btn'>Download CV</button>
           <button className='btn'>Contact me</button>
+
+
+
         </div>
+
+        <div className="center-con">
+    
+    <div className="round">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+</div>
+
       </div>
     </div>
   );
