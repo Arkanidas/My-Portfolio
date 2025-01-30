@@ -3,12 +3,19 @@ import Navigation from '../src/components/Navigation';
 import Typed from 'typed.js';
 import "./styles/landingstyle.css";
 import profile from "./images/smile.jpeg";
-
+import cv from "./documents/Resume - Leon Aysa.pdf";
 
 
 
 function Landing() {
   const text = React.useRef(null);
+
+
+
+
+
+
+
 
 
   React.useEffect(() => {
@@ -38,14 +45,6 @@ function Landing() {
           <img src={profile} className='profile_img' alt="Profile" />
         </div>
 
-        <div className='btn_container'>
-         
-          <button className='btn'>Download CV</button>
-          <button className='btn'>Contact me</button>
-
-
-
-        </div>
 
         <div className="center-con">
     

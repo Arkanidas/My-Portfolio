@@ -4,8 +4,8 @@ import "../styles/landingstyle.css";
 
 
 const Navigation = () => {
-  const [showLinks, setShowLinks] = useState(false);
-  const [MenuActive, setMenuActive] = useState(false);
+  const [showLinks, setShowLinks] = useState<boolean>(false);
+  const [MenuActive, setMenuActive] = useState<boolean>(false);
 
 
   const Togglemenu = () => {
