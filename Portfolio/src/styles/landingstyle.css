@@ -74,14 +74,14 @@ z-index:-1;
 .description{
     font-size: clamp(20px, 2.2vw, 36px);
     font-family: "Agbalumo", serif;
-    color:#214521;
+    color:#252525;
     margin: 0;
     display: inline-block;
     height: 2em; 
 }
 
 .typed-cursor{
-  display: inline-block;
+ display: inline-block;
  position: relative;
 }
 
@@ -95,9 +95,8 @@ z-index:-1;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  
-   position: relative;
-   top:170px;
+  position: relative;
+  top:170px;
 }
 
 .btn{
@@ -297,12 +296,14 @@ opacity: 1;
 
     .burger-active .bar{
    background-color:rgb(93, 93, 93);
+  
 
 
     }
 
     .burger-active .bar:nth-child(1){
         transform: translateY(10px) rotate(45deg);
+   
     }
 
     .burger-active .bar:nth-child(2){
@@ -376,6 +377,26 @@ opacity: 1;
      
     }
 
+    .info_container{
+      text-align: center;
+      position: relative;
+      top: 25vh;
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      z-index:-1;
+      }
+      
+      .name{
+       position: relative;
+       bottom:50px;
+    }
+
+    .description{
+      position: relative;
+      bottom:48px;
+  }
 
   }
 
