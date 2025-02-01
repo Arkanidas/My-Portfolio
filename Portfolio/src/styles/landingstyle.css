@@ -69,6 +69,7 @@ z-index:-1;
   height: 250px;
   border-radius: 50%;
   border: 5px solid black;  
+  transition: transform 20s ease-out;
 }
 
 .description{
@@ -85,6 +86,19 @@ z-index:-1;
  position: relative;
 }
 
+.profile_img:hover{
+  animation: spinning 20s infinite;
+}
+
+@keyframes spinning {
+from{
+transform: rotate(0deg);
+}
+
+to{
+transform: rotate(360deg);
+}
+}
 .name{
     font-size: clamp(35px, 5vw, 70px);
     font-family: "Kaushan Script", serif;
@@ -368,6 +382,8 @@ opacity: 1;
       border: 5px solid black;  
     }
   
+
+
     .center-con {
       top:50%;
     }
