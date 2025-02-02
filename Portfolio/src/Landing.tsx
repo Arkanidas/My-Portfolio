@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from '../src/components/Navigation';
 import Typed from 'typed.js';
 import "./styles/landingstyle.css";
@@ -13,9 +13,9 @@ function Landing() {
 
 
 
-
-
-
+const borderchange = () =>{
+ return Math.floor(Math.random() * 116000)
+}
 
 
   React.useEffect(() => {
