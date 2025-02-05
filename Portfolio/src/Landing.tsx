@@ -3,7 +3,7 @@ import Navigation from '../src/components/Navigation';
 import Typed from 'typed.js';
 import "./styles/landingstyle.css";
 import profile from "./images/smile.jpeg";
-import cv from "./documents/Resume - Leon Aysa.pdf";
+
 
 
 
@@ -13,8 +13,23 @@ function Landing() {
 
 
 
-const borderchange = () =>{
- return Math.floor(Math.random() * 116000)
+const borderchange = (): void =>{
+
+  const borders:string[] = ["dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset",];
+  const randborder:number = Math.floor(Math.random() * 9);
+
+  const randcolor:string = Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");  
+  const profile:HTMLElement = document.querySelector(".profile_img") as HTMLElement;
+
+ 
+
+  if(profile){
+    profile.style.borderColor = "#" + randcolor;
+    profile.style.borderStyle = borders[randborder]
+  }
+
+
+  
 }
 
 
@@ -36,17 +51,22 @@ const borderchange = () =>{
 
 
   return (
-    <div>
-      <div className="Landing">
+  <div>
+    <div className="Landing">
         <Navigation />
-        <div className="info_container">
+    <div className="info_container">
           <h1 className="name">Leon Alexander Aysa</h1>
           <h3 ref={text} className="description"/>
-          <img src={profile} className='profile_img' alt="Profile" />
-        </div>
+          <img onClick={borderchange} src={profile} className='profile_img' alt="Profile" />
 
 
-        <div className="center-con">
+
+
+
+    </div>
+
+
+    <div className="center-con">
     
     <div className="round">
         <span></span>
@@ -56,9 +76,12 @@ const borderchange = () =>{
     </div>
     
 </div>
+ 
+
+
 
       </div>
-    </div>
+  </div>
   );
 }
 
