@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"; 
 import "../styles/landingstyle.css";
+import { motion } from "framer-motion";
+
 
 
 const Navigation = () => {
   const [showLinks, setShowLinks] = useState<boolean>(false);
   const [MenuActive, setMenuActive] = useState<boolean>(false);
+
+
 
 
   const Togglemenu = () => {
@@ -15,7 +19,11 @@ const Navigation = () => {
 
  
   return (
-    <div>
+    <motion.div
+  initial={{ opacity: 0, y: -200 }} // Start invisible and slightly lower
+  animate={{ opacity: 1, y: 0, x: 0 }} // Fade in and move to normal position
+  transition={{ duration: 1, ease: "easeOut"}} 
+ >
       <div className="Navigation">
         <div
           className={`hamburger-menu ${MenuActive ? "burger-active" : ""}`}
@@ -41,7 +49,7 @@ const Navigation = () => {
         </ul>
       </div>
 
-    </div>
+    </motion.div>
   );
 };
 

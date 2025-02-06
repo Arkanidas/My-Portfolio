@@ -76,7 +76,7 @@ z-index:-1;
 .description{
     font-size: clamp(20px, 2.2vw, 36px);
     font-family: "Agbalumo", serif;
-    color:#4c4c4c;
+    color:#340062;
     margin: 0;
     display: inline-block;
     height: 2em; 
@@ -87,20 +87,9 @@ z-index:-1;
  position: relative;
 }
 
-.profile_img:hover{
-  animation: spinning 100s infinite;
-}
 
-@keyframes spinning {
-from{
-transform: rotate(0deg);
-}
 
-to{
-transform: rotate(360deg);
-}
 
-}
 .name{
     font-size: clamp(35px, 5vw, 70px);
     font-family: "Kaushan Script", serif;
@@ -110,18 +99,24 @@ transform: rotate(360deg);
 
 .center-con {
   display: flex;
-
+  align-items: center;
+  justify-content: center;
   position: relative;
-  top:200px;
+  top: 50%;
   cursor: pointer;
+
+ 
 }
 
 .round {
-  border: 3px solid #f70000;
+  position: relative;
+  border: 3px solid #fff;
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  animation: movearrow 3s ease-in-out infinite; 
+  animation: movearrow 3s ease-in-out infinite;
+
+
 }
 
 @keyframes movearrow {
@@ -217,7 +212,7 @@ opacity: 1;
   font-size: 1.4em;
   position: relative; 
   display: inline-block; 
-  color: rgb(68, 4, 178); 
+  color: rgb(77, 3, 203); 
 
 }
 
@@ -241,7 +236,7 @@ opacity: 1;
     position:fixed;
     top:0;
     height:100vh;
-    background: linear-gradient(315deg, hsla(309, 7%, 42%, 1) 0%, hsla(268, 100%, 83%, 1) 0%, hsla(207, 100%, 81%, 1) 100%);
+    background: linear-gradient(315deg, hsl(311.6, 30.1%, 40.4%) 0%, hsl(268.4, 100%, 88.8%) 0%, hsl(278.5, 100%, 61.2%) 100%);
 }
 
 

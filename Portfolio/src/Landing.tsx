@@ -3,6 +3,8 @@ import Navigation from '../src/components/Navigation';
 import Typed from 'typed.js';
 import "./styles/landingstyle.css";
 import profile from "./images/smile.jpeg";
+import { motion } from "framer-motion";
+
 
 
 
@@ -53,29 +55,32 @@ const borderchange = (): void =>{
   return (
   <div>
     <div className="Landing">
+
+
         <Navigation />
-    <div className="info_container">
-          <h1 className="name">Leon Alexander Aysa</h1>
-          <h3 ref={text} className="description"/>
-          <img onClick={borderchange} src={profile} className='profile_img' alt="Profile" />
+        <motion.div
+  className="info_container"
+  initial={{ opacity: 0, y: 30 }} // Start invisible and slightly lower
+  animate={{ opacity: 1, y: 0 }} // Fade in and move to normal position
+  transition={{ duration: 2, ease: "easeOut", type: "spring", stiffness: 120 }}
+
+>
+  <h1 className="name">Leon Alexander Aysa</h1>
+  <h3 ref={text} className="description" />
+  <img onClick={borderchange} src={profile} className="profile_img" alt="Profile" />
+</motion.div>
 
 
-
-
-
-    </div>
-
-
-    <div className="center-con">
-    
+    <div className='center-con'>
     <div className="round">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
     </div>
-    
-</div>
+    </div>
+
+ 
  
 
 
