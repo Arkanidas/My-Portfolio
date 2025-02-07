@@ -102,10 +102,9 @@ z-index:-1;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 50%;
-  cursor: pointer;
+  top:33%;
+  
 
- 
 }
 
 .round {
@@ -115,8 +114,7 @@ z-index:-1;
   height: 50px;
   border-radius: 100%;
   animation: movearrow 3s ease-in-out infinite;
-
-
+  cursor: pointer;
 }
 
 @keyframes movearrow {
@@ -207,6 +205,18 @@ font-size: 20px;
 opacity: 1;
 
 }
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+
 
 .link-paragraph{
   font-size: 1.4em;

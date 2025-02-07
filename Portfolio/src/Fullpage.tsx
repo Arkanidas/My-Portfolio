@@ -9,6 +9,10 @@ import "./styles/landingstyle.css";
 
 
 export default function Fullpage() {
+
+
+
+
   return (
     <div className="scrollable-section">
       <Fullpages>
@@ -21,6 +25,7 @@ export default function Fullpage() {
               <Route path="/" element={<Landing />} />
               <Route path="/projects" element={<Projects />} />
             </Routes>
+
           </FullpageSection>
 
           {/* About Section */}

@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navigation from '../src/components/Navigation';
 import Typed from 'typed.js';
 import "./styles/landingstyle.css";
 import profile from "./images/smile.jpeg";
 import { motion } from "framer-motion";
-
+import useCanvasCursor from "./styles/landingcursor"; 
 
 
 
 
 function Landing() {
   const text = React.useRef(null);
-
+  useCanvasCursor(); 
 
 
 
@@ -29,11 +29,15 @@ const borderchange = (): void =>{
     profile.style.borderColor = "#" + randcolor;
     profile.style.borderStyle = borders[randborder]
   }
-
-
-  
 }
 
+
+const scrollDown = () => {
+  window.scrollBy({
+    top: window.innerHeight, 
+    behavior: "smooth",
+  });
+};
 
   React.useEffect(() => {
     const typed = new Typed(text.current, {
@@ -51,9 +55,10 @@ const borderchange = (): void =>{
     };
   }, []);
 
-
+  
   return (
   <div>
+    <canvas id="canvas" className="custom-cursor"></canvas>
     <div className="Landing">
 
 
@@ -71,8 +76,8 @@ const borderchange = (): void =>{
 </motion.div>
 
 
-    <div className='center-con'>
-    <div className="round">
+    <div className='center-con' >
+    <div className="round" onClick={scrollDown}>
         <span></span>
         <span></span>
         <span></span>

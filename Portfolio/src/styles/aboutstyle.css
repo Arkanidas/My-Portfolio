@@ -20,22 +20,23 @@ html{
   scrollbar-width: none;
 }
 
-.center-con {
+.center-con2 {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    top:50%;
-    cursor: pointer;
+    top:85%;
+    
   }
   
-  .round {
+  .round2 {
     position: relative;
     border: 3px solid #fff;
     width: 50px;
     height: 50px;
     border-radius: 100%;
     animation: movearrow 3s ease-in-out infinite; 
+    cursor: pointer;
   }
   
   @keyframes movearrow {
@@ -95,19 +96,19 @@ html{
     bottom: 54%;
   }
   
-  .round:hover span:nth-child(1) {
+  .round2:hover span:nth-child(1) {
     transform: rotate(-135deg);
   }
   
-  .round:hover span:nth-child(2) {
+  .round2:hover span:nth-child(2) {
     transform: rotate(135deg);
   }
   
-  .round:hover span:nth-child(3) {
+  .round2:hover span:nth-child(3) {
     transform: rotate(225deg);
   }
   
-  .round:hover span:nth-child(4) {
+  .round2:hover span:nth-child(4) {
     transform: rotate(-225deg);
   }
 
@@ -124,4 +125,14 @@ html{
    width: 100px;
    height:50px;
    background-color: antiquewhite;
+  }
+
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
   }
