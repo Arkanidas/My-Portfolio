@@ -73,6 +73,7 @@ const scrollDown = () => {
   <h1 className="name">Leon Alexander Aysa</h1>
   <h3 ref={text} className="description" />
   <img onClick={borderchange} src={profile} className="profile_img" alt="Profile" />
+  <p>hello</p>
 </motion.div>
 
 
