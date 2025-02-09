@@ -26,21 +26,41 @@ export default function About() {
     <div className='About'>
     <canvas id="canvas" className="custom-cursor"></canvas>
    
-  <h1 className="title">About Me</h1>
+  <h1 className="title">About me</h1>
 
+  <div className="about-container">
 
+  <div className="Myinfo">
+  <div className="card">
 
-
-   <div className="center-con2" >
-    
-    <div className="round2" onClick={scrollDown}>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+  <div className="tools">
+    <div className="circle">
+      <div className="redbox"></div>
     </div>
-    
+    <div className="circle">
+      <div className="yellowbox"></div>
+    </div>
+    <div className="circle">
+      <div className="greenbox"></div>
+    </div>
+  </div>
+  <div className="card__content">
+  </div>
 </div>
+
+
+
+  </div>
+  <div className="Myskills">
+
+
+
+
+
+  </div>
+
+
+  </div>
 
        
     </div>

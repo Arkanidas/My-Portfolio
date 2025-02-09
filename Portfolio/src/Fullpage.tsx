@@ -14,32 +14,36 @@ export default function Fullpage() {
 
 
   return (
-    <div className="scrollable-section">
-      <Fullpages>
-        <FullpageNavigation />
-        <FullPageSections>
+    <Routes>
+      {/* FullPage Sections */}
+      <Route path="/" element={
+          <div className="scrollable-section">
+            <Fullpages>
+              <FullpageNavigation />
+               <FullPageSections>
 
-          {/* Landing Section */}
-          <FullpageSection>
-            <Routes>
-              <Route path="/" element={<Landing />} />
-              <Route path="/projects" element={<Projects />} />
-            </Routes>
+               {/* Landing Section */}
+                <FullpageSection>
+                  <Landing />
+                </FullpageSection>
 
-          </FullpageSection>
+               {/* About Section */}
+                <FullpageSection>
+                  <About />
+                </FullpageSection>
 
-          {/* About Section */}
-          <FullpageSection>
-            <About />
-          </FullpageSection>
+               {/* About Section */}    
+                <FullpageSection>
+                  <Contact />
+                </FullpageSection>
 
-          {/* Contact Section */}
-          <FullpageSection>
-            <Contact />
-          </FullpageSection>
-
-        </FullPageSections>
-      </Fullpages>
-    </div>
+              </FullPageSections>
+            </Fullpages>
+          </div>
+        }
+      />
+      
+      <Route path="/projects" element={<Projects />} />
+    </Routes>
   );
 }
