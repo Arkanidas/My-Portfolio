@@ -26,7 +26,7 @@ export default function About() {
     <div className='About'>
     <canvas id="canvas" className="custom-cursor"></canvas>
    
-
+  <h1 className="title">About Me</h1>
 
 
 
