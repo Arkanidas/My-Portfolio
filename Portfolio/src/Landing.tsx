@@ -13,7 +13,20 @@ function Landing() {
   const text = React.useRef(null);
   useCanvasCursor(); 
 
+// disable the console for the user to avoid page issues 
+//document.addEventListener("contextmenu", (event) => event.preventDefault()); 
 
+  //document.addEventListener("keydown", (event) => {
+   // if (event.ctrlKey && (event.key === "u" || event.key === "U")) { 
+   //     event.preventDefault();
+  //  }
+  //  if (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) { 
+  //      event.preventDefault();
+  //  }
+  //  if (event.key === "F12") { 
+  //      event.preventDefault();
+  //  }
+//});
 
 const borderchange = (): void =>{
 
