@@ -395,15 +395,18 @@ html{
   margin-top: 30px; 
   color: #f8fafc;
 }
-
-.skills_info{
-  margin: 0;
-  border: 1px solid black;
+.skills_info {
   display: flex;
-  align-items: baseline;
-  margin-left: 5px;
+  align-items: center; /* Aligns the text and SVG vertically */
+  gap: 5px; /* Adds some spacing between the text and the SVG */
+  border: 1px solid black;
+  padding: 5px 15px 5px 5px;
 }
 
+.skills_info svg {
+  vertical-align: middle; 
+  margin-top: 0; 
+}
 
 .term_title, .icon{
   float:left;
