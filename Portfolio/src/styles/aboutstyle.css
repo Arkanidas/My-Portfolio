@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Carter+One&family=Dancing+Script:wght@471&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Carter+One&family=Dancing+Script:wght@471&family=Fugaz+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
 
 .carter-one-regular {
   font-family: "Carter One", serif;
@@ -6,6 +6,11 @@
   font-style: normal;
 }
 
+.fugaz-one-regular {
+  font-family: "Fugaz One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .About{
     width: 100%;
@@ -386,7 +391,7 @@ html{
 .text-container {
   display: flex;
   flex-direction: row; 
-  gap: 50px; 
+  gap: 30px; 
   flex-wrap: wrap;
   margin-top: 50px;
 
@@ -397,10 +402,11 @@ html{
 }
 .skills_info {
   display: flex;
-  align-items: center; /* Aligns the text and SVG vertically */
-  gap: 5px; /* Adds some spacing between the text and the SVG */
+  align-items: center; 
+  gap: 5px; 
   border: 1px solid black;
-  padding: 5px 15px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Fugaz One", serif;
 }
 
 .skills_info svg {
