@@ -20,8 +20,8 @@ const Navigation = () => {
  
   return (
     <motion.div
-  initial={{ opacity: 0, y: -200 }} // Start invisible and slightly lower
-  animate={{ opacity: 1, y: 0, x: 0 }} // Fade in and move to normal position
+  initial={{ opacity: 0, y: -200 }} 
+  animate={{ opacity: 1, y: 0, x: 0 }} 
   transition={{ duration: 1, ease: "easeOut"}} 
  >
       <div className="Navigation">
