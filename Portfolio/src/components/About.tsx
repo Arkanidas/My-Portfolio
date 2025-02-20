@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import "../styles/aboutstyle.css"
 import Typed from 'typed.js';
 
@@ -6,7 +6,7 @@ import Typed from 'typed.js';
 
 export default function About() {
 
-  const [flipped, setFlipped] = useState(false);
+  const [flipped, setFlipped] = useState<boolean>(false);
   
 
   const text = React.useRef(null);
@@ -15,23 +15,61 @@ export default function About() {
     window.scrollBy({
       top: window.innerHeight, 
       behavior: "smooth",
-    });
+    }); 
   };
 
-  const handleFlip = () => {
+  const handleFlip: () => void = () => {
      if(window.innerWidth > 1024) return;
 
-     setFlipped(!flipped);
-     console.log(flipped)
+     setFlipped((prev) => {
+      const newFlipped:boolean = !prev;
+      const greenbox:HTMLElement = document.querySelector(".greenbox") as HTMLElement;
+      const redbox:HTMLElement = document.querySelector(".redbox") as HTMLElement;
 
 
-     if (flipped === true){
-      const colorchange:HTMLElement = document.querySelector(".profile_img") as HTMLElement;
+      if (greenbox) {
+          if (newFlipped) {
+              greenbox.classList.add("flipped");
+              redbox.classList.add("flippedRed")
+          } else {
+              greenbox.classList.remove("flipped");
+              redbox.classList.remove("flippedRed")
+          }
+      }
 
-     }
+      return newFlipped;
+  });
+
+     
+
+   
+
   };
 
 
+  const handleResize:() => void = () => {
+    if(window.innerWidth >= 1024){
+       setFlipped(false);
+
+       const greenbox = document.querySelector(".greenbox") as HTMLElement;
+       const redbox = document.querySelector(".redbox") as HTMLElement;
+   
+       if (greenbox) {
+         greenbox.classList.remove("flipped");
+       }
+   
+       if (redbox) {
+         redbox.classList.remove("flippedRed");
+       }
+     }
+   };
+
+
+
+useEffect(()=> {
+window.addEventListener("resize", handleResize);
+return () => removeEventListener("resize", handleResize)
+},[])
 
 
 
@@ -178,13 +216,21 @@ export default function About() {
         </div>
       ) : (
         <div className="front-content">
-          <h3 className="desc-title">Who Am I?</h3>
-          <hr style={{ width: "20%" }} />
-          <p>This is a brief introduction about me.</p>
+          <h3 className="desc-title">Get to know me!</h3>
+          <p className="desc-paragraph">
+
+I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+<br/><br/>
+I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming
+<br/><br/>
+I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+</p>
+         
+        
         </div>
       )}
 
-<hr style={{width:"20%"}}></hr>
+
   </div>
 
   </div>
@@ -204,6 +250,7 @@ export default function About() {
 
        <p className="skills">TERMINAL</p>
        <p className="skills">OUTPUT</p>
+       <p className="skills">PORTS</p>
        <p style={{borderBottom:"1px solid gray"}} className="skills">SKILLS</p>
        <button className="copy">
      

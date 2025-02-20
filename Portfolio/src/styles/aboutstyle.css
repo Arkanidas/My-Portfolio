@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Carter+One&family=Dancing+Script:wght@471&family=Fugaz+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Carter+One&family=Dancing+Script:wght@471&family=Fugaz+One&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lexend+Deca:wght@100..900&family=Patua+One&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
 
 .carter-one-regular {
   font-family: "Carter One", serif;
@@ -16,6 +16,20 @@
   font-family: "IBM Plex Mono", serif;
   font-weight: 700;
   font-style: italic;
+}
+
+
+.lexend-deca {
+  font-family: "Lexend Deca", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.patua-one-regular {
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .About{
@@ -42,7 +56,7 @@ html{
 
 .title{
   text-align: center;
-  color: #fff;
+  color: #f0f0f0;
   font-size: clamp(46px, 2.2vw, 50px);
   margin-top: 60px;
   font-family: "Carter One", serif;
@@ -57,7 +71,7 @@ html{
   bottom: 2px;
   width: 50px;
   height: 4px;
-  background: linear-gradient(315deg, hsl(192, 80%, 63%) 0%, hsl(192, 82%, 58%) 0%, hsl(284, 100%, 59%) 100%); 
+  background: linear-gradient(315deg, hsl(192, 80%, 63%) 0%, hsl(192, 60%, 45%) 0%, hsl(205, 77%, 39%) 100%); 
   transform: translateX(-50%);
   border-radius: 15%;
 }
@@ -167,8 +181,8 @@ html{
 
   .about-container{
     display: flex;
-    justify-content: space-between; /* This will push the social to the far left and the cards to the center */
-    align-items: center; /* Vertically center the items */
+    justify-content: space-between; 
+    align-items: center; 
     max-width: 1500px;
     width: 100%;
     height: auto;
@@ -189,7 +203,7 @@ html{
 }
 
 .cardmac {
-  width: 450px; 
+  width: 500px; 
   height: 550px;
   border:3px solid rgb(60, 60, 60);
   background-color: #1E1E1E; 
@@ -206,6 +220,7 @@ html{
   text-align: center;
   color: #F8FBFE; 
   font-family: 'Inter', sans-serif;
+  
 }
 
 
@@ -235,28 +250,9 @@ html{
   border-radius: 50%;
   position: relative; 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 
-/*  
-.redbox:hover::before, 
-.redbox:hover::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 2px;
-  border-radius: 10px;
-  background-color: #7B0913;
-  transform: rotate(45deg);
-}
-*/
-
-/*  
-.redbox:hover::after {
-  transform: rotate(-45deg);
-}
-*/
 
 .yellowbox {
   background-color: #b67e15;
@@ -273,26 +269,6 @@ html{
   position: relative; 
 }
 
-/*  
-.greenbox:hover::before,
-.greenbox:hover::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-*/
-
-/*  
-.greenbox:hover::before {
-  border-width: 6px 6px 0 0;
-  border-color: #12661A transparent;
-  top: 3px;
-  left: 3px;
-  transform: rotate(-185deg);
-}
-*/
 
 .greenbox:hover::after {
   border-width: 0 0 6px 6px;
@@ -309,7 +285,7 @@ html{
 }
 
 .card {
-  width: 450px;
+  width: 500px;
   height: 550px;
   border:3px solid #293851;
   background-color: #1e293b;
@@ -356,7 +332,7 @@ html{
   right: 8px;
   bottom: 0;
   background-color: #33415580;
-  width: 200px;
+  width: 180px;
   height: 30px;
   z-index: 100;
 }
@@ -387,9 +363,25 @@ html{
 
 
 .desc-title{
-  text-align: center;
-  font-size: 26px;
-  margin-top: 15px;
+  text-align: left;
+  font-size: 18px;
+  padding: 10px;
+  color: #c77eff;
+  font-size: clamp(24px, 1.6vw, 40px);
+  font-family: "Lexend Deca", serif;
+  padding-bottom: 10px;
+  position: relative;
+
+}
+
+.desc-paragraph{
+  padding: 5px;
+  text-align: left;
+  font-family: "Patua One", serif;
+  font-size: 14px;
+  color: #f0f0f0;
+  word-spacing: 3px;
+  word-break:keep-all;
 }
 
 
@@ -498,8 +490,7 @@ html{
   position: absolute;
   color: #1877f2;
   border-color: #1877f2;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
-    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
   border-radius: 50%;
   transition: all 0.3s;
   height: 60px;
@@ -550,13 +541,16 @@ html{
     align-items: center;
     text-align: center;
     justify-items: center;
+  }
 
+  .desc-paragraph{
 
+    font-size: clamp(13px, 1.7vw, 30px);
+ 
   }
 
   .cardmac {
     transition: transform 0.5s;
-    transform-style: preserve-3d;
     width: 90%;
     overflow-y: scroll;
   }
@@ -591,8 +585,7 @@ html{
     height: 0;
     border-style: solid;
   }
-  
-  
+
   .greenbox:hover::before {
     border-width: 6px 6px 0 0;
     border-color: #12661A transparent;
@@ -601,18 +594,67 @@ html{
     transform: rotate(-185deg);
   }
 
-  .greenbox:active{
+  .greenbox:active {
     opacity: 0.7;
   }
-  
-  
-   .greenbox:hover {
+
+  .greenbox:hover {
     filter: brightness(0.8);
   }
 
   .greenbox {
     background-color: #7eff8b;
+    box-shadow: 5px green;
   }
+
+
+
+  .greenbox.flipped:hover::before,
+  .greenbox.flipped:hover::after {
+    content: none;
+  }
+
+  .greenbox.flipped:hover {
+    filter: none;
+  }
+
+  .greenbox.flipped:active {
+    opacity: 1;
+  }
+
+  .greenbox.flipped{
+    background-color: rgb(51, 135, 21);
+  }
+
+  .redbox.flippedRed:hover::before, 
+  .redbox.flippedRed:hover::after {
+    content: "";
+    position: absolute;
+    top:45%;
+
+    left:20%;
+    width: 10px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #000000;
+    transform: rotate(45deg);
+   
+    
+  }
+  
+  .redbox.flippedRed:hover::after {
+    transform: rotate(-45deg);
+   
+  }
+  
+  .redbox.flippedRed {
+    background-color: #fb6161;
+  }
+
+  .redbox.flippedRed:active {
+    filter: brightness(0.8);
+  }
+
 
   .text-container1 {
     display: flex;
@@ -623,7 +665,23 @@ html{
   }
 
 
+  .circle > .greenbox:first-child {
+    background-color: #7eff8b;
+    box-shadow: inset 0 0 20px rgba(34, 255, 5, 0.3), 
+    inset 0 0 5px rgba(20, 234, 0, 0.5), 
+    0 40px 40px rgba(2, 231, 10, 0.3); /* Increased outer shadow */
+  }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 630px) {
@@ -633,6 +691,10 @@ html{
     text-align: center;
     justify-items: center;
 
+  }
+
+  .desc-paragraph{
+    font-size: 14px;
   }
 
 
@@ -667,7 +729,5 @@ html{
   filter: brightness(0.8);
 }
 
-.greenbox {
-  background-color: #7eff8b;
-}
+
 }
