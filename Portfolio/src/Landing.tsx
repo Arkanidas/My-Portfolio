@@ -86,7 +86,6 @@ const scrollDown = () => {
   <h3 ref={text} className="description" />
   <div className="profile_wrapper">
   <img onClick={borderchange} src={profile} className="profile_img" alt="Profile"/>
-  <button className='cv_button'>Download CV</button>
   </div>
 
 </motion.div>

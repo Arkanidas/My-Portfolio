@@ -371,15 +371,15 @@ html{
   font-family: "Lexend Deca", serif;
   padding-bottom: 10px;
   position: relative;
-
 }
+
 
 .desc-paragraph{
   padding: 5px;
   text-align: left;
   font-family: "Patua One", serif;
   font-size: 14px;
-  color: #f0f0f0;
+  color: #d1d1d1;
   word-spacing: 3px;
   word-break:keep-all;
 }
@@ -544,19 +544,18 @@ html{
   }
 
   .desc-paragraph{
-
-    font-size: clamp(13px, 1.7vw, 30px);
- 
+    font-size: clamp(15px, 1.7vw, 30px);
   }
+
 
   .cardmac {
     transition: transform 0.5s;
     width: 90%;
     overflow-y: scroll;
+    scrollbar-width: auto; 
   }
 
   
-
   .flipped  {
     transform: rotateY(180deg);
   }
@@ -631,12 +630,11 @@ html{
     content: "";
     position: absolute;
     top:45%;
-
     left:20%;
     width: 10px;
     height: 2px;
     border-radius: 10px;
-    background-color: #000000;
+    background-color: #780000;
     transform: rotate(45deg);
    
     
@@ -648,7 +646,10 @@ html{
   }
   
   .redbox.flippedRed {
-    background-color: #fb6161;
+    background-color: #ff4747;
+    -webkit-box-shadow:0px 0px 53px 12px rgb(250, 69, 69);
+    -moz-box-shadow: 0px 0px 53px 12px rgb(246, 39, 39);
+    box-shadow: 0px 0px 53px 12px rgb(209, 45, 45);
   }
 
   .redbox.flippedRed:active {
@@ -659,21 +660,33 @@ html{
   .text-container1 {
     display: flex;
     flex-direction: row; 
-    gap: 10px; 
+    gap: calc(12px + 2vw);
     flex-wrap: wrap;
-    margin-top: 50px;
+
+  }
+
+  .skills_info{
+    background-color: #3e0064;
   }
 
 
-  .greenbox  {
-    background-color: #7eff8b;
-   
-  
--webkit-box-shadow:0px 0px 188px 10px rgb(249, 249, 249);
--moz-box-shadow: 0px 0px 188px 10px rgb(233, 238, 232);
-box-shadow: 0px 0px 188px 10px rgb(254, 255, 254);
-
+  .special-circle > .greenbox {
+   -webkit-box-shadow:0px 0px 10px 6px rgba(0,255,60,1);
+   -moz-box-shadow: 0px 0px 50px 6px rgba(0,255,60,1);
+   box-shadow: 0px 0px 30px 6px rgba(0,255,60,1);
   }
+
+.special-circle > .greenbox.flipped{
+  box-shadow: none;
+}
+
+.desc-title.flippedTitle{
+  text-align: center;
+}
+
+
+
+
 }
 
 
