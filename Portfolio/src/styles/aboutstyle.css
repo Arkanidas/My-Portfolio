@@ -515,6 +515,110 @@ html{
   transform: translate(10px, -10px);
 }
 
+.about_btns{
+  display: flex;
+  flex-direction: row;
+  gap:50px;
+  padding:50px;
+  justify-content:center;
+  align-content: space-between;
+
+}
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 11px 32px;
+  border: 3px solid;
+  border-color: transparent;
+  background-color:rgb(10, 82, 0);
+  border-radius: 10px;
+  font-weight: 600;
+  color: rgb(239, 229, 254);
+  box-shadow: 0 0 0 2px rgb(0, 0, 0);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: rgb(255, 255, 255);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+ 
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgb(92, 47, 255);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Carter One", serif;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #000000;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover .circle1 {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+}
 
 
 
@@ -684,13 +788,7 @@ html{
   text-align: center;
 }
 
-
-
-
 }
-
-
-
 
 
 
@@ -706,6 +804,7 @@ html{
     flex-direction: column;
     text-align: center;
     justify-items: center;
+ 
 
   }
 

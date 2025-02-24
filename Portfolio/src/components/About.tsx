@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from "react";
 import "../styles/aboutstyle.css"
 import Typed from 'typed.js';
-
+import { IoMdMail } from "react-icons/io";
 
 
 export default function About() {
@@ -226,11 +226,42 @@ return () => removeEventListener("resize", handleResize)
 I’m open to new opportunities where I can contribute, learn, and grow. If you have a role that aligns with my skills and experience, please feel free to reach out down below or one of my social medias. I would love to connect and discuss how I can add value to your team or project.
 
 </p>
+        <div className="about_btns">
+        <button className="animated-button">
+  <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <div className="text">Get in Touch</div>
+  <div className="circle1"></div>
+  <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</button>
+<button className="animated-button">
+  <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <div className="text">Download CV</div>
+  <div className="circle1"></div>
+  <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</button>
 
-         
-        
+         </div>
+
         </div>
       )}
+
+
 
 
   </div>
