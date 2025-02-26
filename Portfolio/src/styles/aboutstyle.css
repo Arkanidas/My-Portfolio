@@ -517,11 +517,11 @@ html{
 
 .about_btns{
   display: flex;
-  flex-direction: row;
-  gap:50px;
-  padding:50px;
+  gap: min(5vw, 35px); 
+  padding:30px;
   justify-content:center;
   align-content: space-between;
+
 
 }
 
@@ -532,26 +532,32 @@ html{
   padding: 11px 32px;
   border: 3px solid;
   border-color: transparent;
-  background-color:rgb(10, 82, 0);
+  background-color:inherit;
   border-radius: 10px;
   font-weight: 600;
   color: rgb(239, 229, 254);
-  box-shadow: 0 0 0 2px rgb(0, 0, 0);
+  box-shadow: 0 0 0 2px rgb(0, 151, 0);
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  min-width: 140px;
+  max-width: 250px; 
+  height: 50px;
+  font-size: 16px; 
+  flex-shrink: 0; 
+  white-space: nowrap; 
 }
+
 
 .animated-button svg {
   position: absolute;
   width: 24px;
-  fill: rgb(255, 255, 255);
   z-index: 9;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .animated-button .arr-1 {
-  right: 16px;
+  right: 12px;
  
 }
 
@@ -566,7 +572,7 @@ html{
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: rgb(92, 47, 255);
+  background-color: #c77eff;
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -620,8 +626,37 @@ html{
   height: 40px;
 }
 
+.header-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 
+  height:auto;
+  align-items: baseline;
+  align-content: space-around;
+}
 
+.icons-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: auto;
+  height:auto;
+  align-items: baseline;
+  align-content: space-around;
+  padding: 5px 5px;
+  position: relative;
+  left:1em;
+  flex-wrap: wrap;
+  visibility: hidden;
+
+}
+
+.react-icons{
+  width: 18px;
+  height:18px;
+  color: rgb(225, 225, 225);
+}
 
 
 
@@ -791,9 +826,26 @@ html{
 }
 
 
+@media (max-width: 767px) {
+  .about_btns {
+    gap: 30px; 
+  }
 
+  .animated-button {
+    font-size: 14px; 
+    padding: 12px 30px;
+    min-width: 100px; 
+    max-width: 170px;
+  }
 
-
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+}
 
 
 
@@ -807,6 +859,11 @@ html{
  
 
   }
+
+.desc-title{
+  margin: 0;
+  padding:5px;
+}
 
   .desc-paragraph{
     font-size: 14px;
@@ -844,5 +901,13 @@ html{
   filter: brightness(0.8);
 }
 
+.icons-container{
+  visibility:visible;
+}
+
+.react-icons:hover{
+ filter: contrast(50%);
+ cursor: pointer;
+}
 
 }
