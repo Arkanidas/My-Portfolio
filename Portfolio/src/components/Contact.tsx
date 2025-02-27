@@ -1,11 +1,22 @@
 import React from 'react'
-import "../styles/landingstyle.css"
+import "../styles/contactstyle.css"
+import Contactpic from "../images/contactme.png"
 
 export default function Contact() {
   return (
     <div className='Contact'>
       
-      <h1 style={{fontSize:"40px", color: "red", marginTop:"200px"}}>hello how are u wefwefwef wef wef wef we we we we</h1>
+      <div className='contact-container'>
+
+       <div className="image-container">
+        <img src={Contactpic} width={700} height={500}></img>
+         
+        </div>
+
+
+
+
+      </div>
 
 
     </div>

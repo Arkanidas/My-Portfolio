@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import cv from "../documents/Resume - Leon Aysa.pdf"
 
 
 export default function About() {
@@ -15,25 +16,32 @@ export default function About() {
   const text = React.useRef(null);
   
   const scrollDown = () => {
-    const targetScroll = window.scrollY + window.innerHeight; // Calculate the target position
-  
-    const smoothScroll = () => {
-      window.scrollBy({
+    const targetScroll:number = window.scrollY + window.innerHeight; 
+      const smoothScroll:() => void = () => {
+       
+        window.scrollBy({
         top: window.innerHeight,
         behavior: "smooth",
       });
   
-      setTimeout(() => {
-        if (window.scrollY < targetScroll - 10) {
-          smoothScroll(); // Recursively call until we reach the target
+        setTimeout(() => {
+          if (window.scrollY < targetScroll - 10) {
+          smoothScroll(); 
         }
-      }, 300); // Wait for the smooth scroll effect
+      }, 200); 
     };
   
     smoothScroll();
   };
 
-
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = cv;
+    link.download = "Leon_Aysa_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const handleFlip: () => void = () => {
      if(window.innerWidth > 1024) return;
@@ -269,13 +277,13 @@ I’m open to new opportunities where I can contribute, learn, and grow. If you 
 
 </p>
         <div className="about_btns">
-        <button className="animated-button">
+        <button className="animated-button" onClick={scrollDown}>
   <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
     ></path>
   </svg>
-  <div className="text" onClick={scrollDown}>Get in Touch</div>
+  <div className="text" >Get in Touch</div>
   <div className="circle1"></div>
   <svg className="arr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="currentColor" viewBox="0 0 24 24">
   <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"/>
@@ -283,13 +291,13 @@ I’m open to new opportunities where I can contribute, learn, and grow. If you 
 </svg>
 
 </button>
-<button className="animated-button">
+<button className="animated-button" onClick={downloadCV}>
   <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
     ></path>
   </svg>
-  <div className="text">Download CV</div>
+  <div className="text" >Download CV</div>
   <div className="circle1"></div>
  
   <svg className="arr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

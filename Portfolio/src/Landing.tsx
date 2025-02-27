@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navigation from '../src/components/Navigation';
 import Typed from 'typed.js';
 import "./styles/landingstyle.css";
