@@ -30,6 +30,20 @@
     font-style: italic;
   }
   
+  .Landing{
+    width: 100%;
+    position:fixed;
+    top:0;
+    height:100vh;
+    background: linear-gradient(360deg, hsl(287, 82%, 36%) 0%, hsl(268, 88%, 80%) 0%, hsl(278, 73%, 53%) 100%);
+}
+
+.link-paragraph{
+  font-size: 1.4em;
+  position: relative; 
+  display: inline-block; 
+  color: rgb(0, 0, 0); 
+}
 
 body{
     margin:0;
@@ -254,15 +268,6 @@ opacity: 1;
 }
 
 
-
-.link-paragraph{
-  font-size: 1.4em;
-  position: relative; 
-  display: inline-block; 
-  color: rgb(77, 3, 203); 
-
-}
-
 .link-paragraph::after {
   content: ""; 
   position: absolute; 
@@ -277,15 +282,6 @@ opacity: 1;
 .link-paragraph:hover::after {
   width: 100%; 
 }
-
-.Landing{
-    width: 100%;
-    position:fixed;
-    top:0;
-    height:100vh;
-    background: linear-gradient(315deg, hsl(311.6, 30.1%, 40.4%) 0%, hsl(268.4, 100%, 88.8%) 0%, hsl(278.5, 100%, 61.2%) 100%);
-}
-
 
 
 .Contact{

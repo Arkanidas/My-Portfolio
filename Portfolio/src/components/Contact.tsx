@@ -1,4 +1,3 @@
-import React from 'react'
 import "../styles/contactstyle.css"
 import Contactform from './Contactform'
 
