@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Carter+One&family=Dancing+Script:wght@471&family=Fugaz+One&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lexend+Deca:wght@100..900&family=Patua+One&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Archivo+Black&family=Carter+One&family=Dancing+Script:wght@471&family=Fugaz+One&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lexend+Deca:wght@100..900&family=Patua+One&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
 
 .carter-one-regular {
     font-family: "Carter One", serif;
@@ -32,6 +32,12 @@
     font-style: normal;
   }
 
+  .archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .Contact{
     width: 100%;
     height:100vh;
@@ -39,9 +45,7 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%238F00CD' stroke-width='0' stroke-opacity='0' %3E%3Ccircle fill='%236C009E' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23630096' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%235b008e' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23530085' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%234b007d' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23430075' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%233c006d' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23360065' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%232f005d' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23290054' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2324004c' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%231e0044' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2319003c' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23150034' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2311002c' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%230d0023' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%2309001b' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23060013' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
-
   }
-
 
   .form {
     position: relative;
@@ -63,20 +67,23 @@
     overflow: hidden;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
+    z-index: 0;
+   
+    
   }
   
 
-  .header-container{
+  .head-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items:center
   }
   
 .fname{
     color:white;
-    font-family: "Carter One", serif;
+    font-family: "Archivo Black", sans-serif;
+    margin-bottom: 6px;
 }
   
   .input-container {
@@ -101,7 +108,7 @@
   
   .input-mail, .input-name, .input-message {
     outline: none;
-    border: 3px outset #b9b8b8;
+    border: 3px outset #909090;
     margin-bottom:15px;
     font-family: monospace;
     max-width: 600px;
@@ -141,12 +148,13 @@
     text-transform: uppercase;
     overflow: hidden;
     left:50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 35%);
     border-radius: 20px;
+  
   }
   
-  .input-name:focus {
-    box-shadow: 5px inset 0 0 0 .15vw skyblue;
+  .input-name:focus, .input-mail:focus, .input-message:focus {
+    border-color: #9706f1;
   }
 
   .submit:hover {
@@ -200,9 +208,7 @@
 
   
   
-  .form-title span {
-    animation: flickering 2s linear infinite both;
-  }
+
   
   .title-2 {
     display: block;
@@ -211,11 +217,13 @@
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    -webkit-text-stroke: #fff 0.1rem;
+    -webkit-text-stroke: #ffffff 0.1rem;
     letter-spacing: 0.2rem;
     color: transparent;
     position: relative;
-    text-shadow: 0px 0px 16px #CECECE;
+    text-shadow: 0px 0px 16px #ededed;
+    animation: flickering 8s linear infinite both;
+
   }
   
   .title-2 span::before,
@@ -236,11 +244,11 @@
     }
   
     42% {
-      opacity: 0;
+      opacity: 0.4;
     }
   
     43% {
-      opacity: 0;
+      opacity: 0.9;
     }
   
     43.01% {
@@ -252,11 +260,11 @@
     }
   
     48% {
-      opacity: 0;
+      opacity: 0.7;
     }
   
     49% {
-      opacity: 0;
+      opacity: 0.8;
     }
   
     49.01% {
@@ -274,7 +282,7 @@
     height: 100%;
     z-index: -2;
     background-size: cover;
-    animation: animateBg 50s linear infinite;
+    animation: animateBg 40s linear infinite;
   }
   
   @keyframes animateBg {
@@ -283,20 +291,20 @@
     }
   
     50% {
-      transform: scale(1.2);
+      transform: scale(2);
     }
   }
   
   .star {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     width: 4px;
     height: 4px;
-    background: #fff;
+    background: #b300ff;
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
-    animation: animate 3s linear infinite;
+    animation: animate 20s linear infinite;
   }
   
   .star::before {
@@ -330,15 +338,15 @@
     right: 0;
     left: initial;
     animation-delay: 0s;
-    animation-duration: 1s;
+    animation-duration: 2.4s;
   }
   
   .star:nth-child(2) {
     top: 0;
     right: 100px;
     left: initial;
-    animation-delay: 0.2s;
-    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-duration: 3.4s;
   }
   
   .star:nth-child(3) {
@@ -346,15 +354,23 @@
     right: 220px;
     left: initial;
     animation-delay: 2.75s;
-    animation-duration: 2.75s;
+    animation-duration: 4s;
   }
   
   .star:nth-child(4) {
     top: 0;
     right: -220px;
     left: initial;
-    animation-delay: 1.6s;
-    animation-duration: 1.6s;
+    animation-delay: 3.1s;
+    animation-duration: 5.3s;
+  }
+
+  .star:nth-child(5) {
+    top: 0;
+    right: -220px;
+    left: initial;
+    animation-delay: 0.9s;
+    animation-duration: 6.8s;
   }
   
   .tooltip-container {
@@ -362,109 +378,23 @@
     --color: #e8e8e8;
     position: relative;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-    font-size: 18px;
-    font-weight: 600;
     color: var(--color);
     padding-top:1em;
     text-transform: uppercase;
     display: grid;
     place-items: center;
     overflow: visible;
-    bottom:17px;
+    bottom:12px;
     left:100px;
+    z-index:10;
+    transition: left 0.3s ease; 
+
   }
   
  
   
- 
-  
-  .tooltip {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0.3em 0.6em;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-    background: var(--background);
-    z-index: -1;
-    border-radius: 8px;
-    scale: 0;
-    transform-origin: 0 0;
-    text-transform: capitalize;
-    font-weight: 400;
-    font-size: 16px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 
-  }
   
-  .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 0.6em;
-    width: 0.6em;
-    bottom: -0.2em;
-    left: 50%;
-    transform: translate(-50%) rotate(120deg);
-    background: var(--background);
-  }
-  
-  .tooltip-container:hover .tooltip {
-    top: -100%;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    scale: 1;
-    animation: shake 0.5s ease-in-out both;
-    z-index: 10;
-  }
-  
-  .tooltip-container:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    color: white;
-    border-color: transparent;
-  }
-  
-  .tooltip-container:hover span:last-child {
-    transform: scale(1);
-    left: 0;
-  }
-  
-  .tooltip-container:hover .text {
-    opacity: 0;
-    top: 0%;
-    left: 100%;
-    transform: scale(0);
-  }
-  
-  @keyframes shake {
-    0% {
-      rotate: 0;
-    }
-  
-    25% {
-      rotate: 7deg;
-    }
-  
-    50% {
-      rotate: -7deg;
-    }
-  
-    75% {
-      rotate: 1deg;
-    }
-  
-    100% {
-      rotate: 0;
-    }
-  }
-  
-
-
-
-
 
 .title_c{
     text-align: center;
@@ -493,10 +423,11 @@
 @media (max-width:767px){
      .form{
         width:70%
+        
      }
 
      .title-2 {
-        font-size:clamp(25px, 1.8vw, 30px);
+        font-size: clamp(25px, 4vw, 30px); 
       }
 
       .fname{
@@ -516,6 +447,12 @@
         position: relative;
         top:20px;
     }
+
+    .tooltip-container {
+        left:calc(10% - 10px);
+       
+      }
+   
 }
   
 

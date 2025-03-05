@@ -185,13 +185,13 @@ return () => removeEventListener("resize", handleResize)
   <div className={`cardmac ${flipped ? "flipped" : ""}`}>
     <div className="tools">
       <div className="circle">
-       <div className="redbox" onClick={flipped ? handleFlip: undefined}></div>
+       <div className="redbox" onClick={flipped ? handleFlip : undefined}></div>
       </div>
       <div className="circle">
        <div className="yellowbox"></div>
       </div>
       <div className="circle special-circle" >
-       <div className="greenbox" onClick={!flipped ? handleFlip: undefined}></div>
+       <div className="greenbox" onClick={!flipped ? handleFlip : undefined}></div>
       </div>
     </div>
 
