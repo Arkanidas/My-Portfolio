@@ -154,7 +154,7 @@
   }
   
   .input-name:focus, .input-mail:focus, .input-message:focus {
-    border-color: #9706f1;
+    border-color: #1e65ff;
   }
 
   .submit:hover {

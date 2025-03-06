@@ -2,7 +2,7 @@ import { useState } from 'react'
 import "../styles/contactstyle.css"
 import { RxQuestionMarkCircled } from "react-icons/rx";
 import emailjs from "emailjs-com";
-import { sub } from 'framer-motion/client';
+import {toast, Toaster} from "react-hot-toast"
 
 
 
@@ -16,7 +16,6 @@ const [Tip, setTip] = useState<boolean>(false);
 
 
 
-
 const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,18 +23,7 @@ const [formData, setFormData] = useState({
   });
 
 
-  const lastSubmit = localStorage.getItem("lastSubmit");
-
-  if (lastSubmit) {
-    const lastSubmissionTime = new Date(lastSubmit);
-    const now = new Date();
-    const diffInHours = (now.getTime() - lastSubmissionTime.getTime()) / (1000 * 60 * 60);
-
-    if (diffInHours < 24) {
-      alert("You can only send one message per day. Please try again later.");
-      return; 
-    }
-  }
+  
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -45,13 +33,34 @@ const [formData, setFormData] = useState({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    const lastSubmit = localStorage.getItem("lastSubmit");
+
+  if (lastSubmit) {
+    const lastSubmissionTime = new Date(lastSubmit);
+    const now = new Date();
+    const diffInHours = (now.getTime() - lastSubmissionTime.getTime()) / (1000 * 60 * 60);
+
+    if (diffInHours < 24) {
+      toast("You can only send one message per day. Please try again later.", {
+        icon: "⚠️",
+        position: "bottom-center",
+        style: {
+            background: "orange",
+            color: "#fff",
+            fontFamily: "arial"
+        },
+    });
+      return; 
+    }
+  }
+
     const templateParams = {
         from_name: formData.name,  
         from_email: formData.email, 
         message: formData.message, 
     };
 
-    const submitText = document.querySelector(".sign-text") as HTMLDivElement;
+    const submitText:HTMLDivElement = document.querySelector(".sign-text") as HTMLDivElement;
     submitText.innerText = "Sending...";
      
     emailjs.send(
@@ -61,14 +70,33 @@ const [formData, setFormData] = useState({
        userId  
     ).then(
       (response) => {
-        alert("Email sent successfully!");
+        
         console.log(response)
         setFormData({ name: "", email: "", message: "" });
         submitText.innerText = "Send";
+        toast("Message Sent Sucessfully!", {
+          icon: "✅",
+          position: "bottom-center",
+          style: {
+            background: "green",
+            color: "#fff",
+            fontFamily:'arial'
+          },
+        });
+        
+        localStorage.setItem("lastSubmission", new Date().toISOString());
       },
       (error) => {
-        alert("Failed to send email.");
         console.log(error)
+        toast("Failed to send email, Please try again", {
+          icon: "❌",
+          position: "bottom-center",
+          style: {
+            background: "red",
+            color: "#fff",
+            fontFamily:'arial'
+          },
+        });
       }
     );
   };
@@ -76,7 +104,7 @@ const [formData, setFormData] = useState({
 
     const ShowTip: () => void  = () => {
         setTip(!Tip)
-
+        
         if (Tip === true) {
           alert("Feel free to send me an Email, just to say hello or to ask me anything you want to know about me or my projects. I'm also open to networking and collaborating for future projects :)")
           setTip(!false)
@@ -87,7 +115,7 @@ const [formData, setFormData] = useState({
 
   return (
   <div>
-   
+ 
 
    <form className="form" onSubmit={handleSubmit}>
 
@@ -133,7 +161,10 @@ const [formData, setFormData] = useState({
    </form>
 
 
-
+   <Toaster
+  position="bottom-center"
+  reverseOrder={true}
+/>
 
   </div>
 
