@@ -33,7 +33,7 @@ const [formData, setFormData] = useState({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const lastSubmit = localStorage.getItem("lastSubmit");
+    const lastSubmit = localStorage.getItem("lastSubmission");
 
   if (lastSubmit) {
     const lastSubmissionTime = new Date(lastSubmit);
@@ -54,6 +54,8 @@ const [formData, setFormData] = useState({
     }
   }
 
+
+
     const templateParams = {
         from_name: formData.name,  
         from_email: formData.email, 
@@ -71,7 +73,7 @@ const [formData, setFormData] = useState({
     ).then(
       (response) => {
         
-        console.log(response)
+        console.log("Message was sent Successfully with response: " + response)
         setFormData({ name: "", email: "", message: "" });
         submitText.innerText = "Send";
         toast("Message Sent Sucessfully!", {
@@ -83,11 +85,11 @@ const [formData, setFormData] = useState({
             fontFamily:'arial'
           },
         });
-        
+
         localStorage.setItem("lastSubmission", new Date().toISOString());
       },
       (error) => {
-        console.log(error)
+        console.log("Could not sent message Error:" + error)
         toast("Failed to send email, Please try again", {
           icon: "❌",
           position: "bottom-center",
@@ -101,12 +103,11 @@ const [formData, setFormData] = useState({
     );
   };
 
-
     const ShowTip: () => void  = () => {
         setTip(!Tip)
         
         if (Tip === true) {
-          alert("Feel free to send me an Email, just to say hello or to ask me anything you want to know about me or my projects. I'm also open to networking and collaborating for future projects :)")
+          alert("Feel free to send me an Email, just to say hello or to ask me anything you want to know about me or my projects. I'm also open to networking and collaborating for future projects. Remember that you can only send one message per day :)")
           setTip(!false)
           console.log(Tip);    
      }

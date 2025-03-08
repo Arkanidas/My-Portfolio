@@ -1,45 +1,19 @@
 import Navigation from "./Navigation"
+import "../styles/landingstyle.css"
+
 
 export default function Projects() {
   return (
-    <div>
+    <div className="Projects">
       <Navigation/>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
-      <h1>Hello world</h1>
+  
+  <div className="d-flex flex-column">
 
+
+
+    </div>
+   
+   
     </div>
   )
 }

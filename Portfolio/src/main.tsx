@@ -6,6 +6,7 @@ import Fullpage from "./Fullpage.tsx"
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
