@@ -7,7 +7,7 @@ export default function Projects() {
     <div className="Projects">
       <Navigation/>
   
-  <div className="d-flex flex-column">
+  <div className="">
 
 
 
