@@ -12,6 +12,7 @@
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.3.0",
     "@fullpage/react-fullpage": "^0.1.42",
+    "@tailwindcss/vite": "^4.0.14",
     "atropos": "^2.0.2",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.7",
@@ -39,7 +40,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.13",
+    "tailwindcss": "^4.0.14",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }

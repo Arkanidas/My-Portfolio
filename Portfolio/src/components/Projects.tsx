@@ -1,5 +1,5 @@
 import Navigation from "./Navigation"
-import "../styles/landingstyle.css"
+import "../styles/Projects.css"
 
 
 export default function Projects() {

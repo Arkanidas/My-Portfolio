@@ -34,7 +34,7 @@ export default function About() {
     smoothScroll();
   };
 
-  const downloadCV = () => {
+  const downloadCV: () => void = () => {
     const link = document.createElement("a");
     link.href = cv;
     link.download = "Leon_Aysa_CV.pdf";
