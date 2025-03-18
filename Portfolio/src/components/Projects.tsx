@@ -9,7 +9,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.6, 
+      staggerChildren: 0.1, 
       duration:0.1,
     },
   },
@@ -53,16 +53,34 @@ export default function Projects() {
     variants={containerVariants}
   >
       <Navigation/>
-  
+      <div className="description-container">
       <h2 className="project-title">My Projects</h2>
+      <p className="descriptions">Here are my Projects that I've been working with. Feel free to explore or send me suggestions for improvements  </p>
+      </div>
 
-    <div className="project-container">
-       <div className="project-child">child1</div>
-       <div className="project-child">child 2</div>
-       <div className="project-child"> child 3</div>
-    </div>
-   
-   
+      <motion.div className="project-container" variants={containerVariants}>
+        <motion.div className="project-child" variants={childVariants}>
+          <img src="https://via.placeholder.com/400x250" alt="Project 1" className="project-image" />
+        
+        </motion.div>
+
+        <motion.div className="project-child" variants={childVariants}>
+          <img src="https://via.placeholder.com/400x250" alt="Project 2" className="project-image" />
+          <h3>Project 2</h3>
+          <p>Description for Project 2</p>
+          <a href="#" className="project-button">View Project</a>
+        </motion.div>
+
+        <motion.div className="project-child" variants={childVariants}>
+          <img src="https://via.placeholder.com/400x250" alt="Project 3" className="project-image" />
+          <h3>Project 3</h3>
+          <p>Description for Project 3</p>
+          <a href="#" className="project-button">View Project</a>
+        </motion.div>
+      </motion.div>
     </motion.div>
+   
+   
+   
   )
 }
