@@ -7,7 +7,7 @@
     --gap: 40px; 
 }
 
-.project-title:after {
+.project-header:after {
     content: "";
     display: block;
     width: 100px;
@@ -17,14 +17,21 @@
     margin: 7px auto;  
 }
 
-.project-title{
+.project-header{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
 }
 
+.project-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    position: relative;
+    left: 10px;
+    top:10px;
+}
 .description-container{
     position: absolute; 
-    top: 40px; 
+    top: 20px; 
     left: 50%;
     transform: translateX(-50%); 
     font-size: 24px;
@@ -48,7 +55,7 @@
 .Projects {
     width: 100%;
     background-color: #ca69cc;
-    min-height: 110vh;
+    min-height: 150vh;
     height:100%;
 
 }
@@ -62,18 +69,26 @@
     width: 100%;
     padding: 30px;
     position: relative;
-    top: 60px;
+    top: 40px;
     left: 50%;
     transform: translate(-50%);
 }
 
 .project-child {
     width: 400px; 
-    height: 500px; 
-    border-radius: 20px;
+    height: 540px; 
+    border-radius: 25px;
     border: 1px solid green;
     background-color: rgb(131, 131, 131);
+}
 
+.project-image {
+    width: calc(100% - 20px); 
+    height: 300px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    display: block;
+    margin: 10px auto 0 auto; 
 }
 
 /* smaller screens/laptop devices */

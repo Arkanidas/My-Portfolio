@@ -1,7 +1,7 @@
 import Navigation from "./Navigation"
 import "../styles/Projects.css"
 import { motion } from "framer-motion";
-
+import pro from "../images/pro1.jpg"
 
 const containerVariants = {
   hidden: { opacity: 0,},
@@ -24,21 +24,21 @@ const myprojects = [
   {
     title: "Project 1",
     description: "This is a description of project 1.",
-    imgSrc: "https://via.placeholder.com/400x250", 
+    img: pro, 
     link_prev: "#",
     link_github: "#",
   },
   {
-    title: "Project 2",
-    description: "This is a description of project 2.",
-    imgSrc: "https://via.placeholder.com/400x250",
+    title2: "Project 2",
+    description2: "This is a description of project 2.",
+    img2: "https://via.placeholder.com/400x250",
     link_prev: "#",
     link_github: "#",
   },
   {
-    title: "Project 3",
-    description: "This is a description of project 3.",
-    imgSrc: "https://via.placeholder.com/400x250",
+    title3: "Project 3",
+    description3: "This is a description of project 3.",
+    img3: "https://via.placeholder.com/400x250",
     link_prev: "#",
     link_github: "#",
   },
@@ -54,28 +54,25 @@ export default function Projects() {
   >
       <Navigation/>
       <div className="description-container">
-      <h2 className="project-title">My Projects</h2>
-      <p className="descriptions">Here are my Projects that I've been working with. Feel free to explore or send me suggestions for improvements  </p>
+      <h2 className="project-header">My Projects</h2>
+      <p className="descriptions">Here are my Projects that I've been working with. Feel free to explore or send me suggestions for improvements</p>
+      
       </div>
 
       <motion.div className="project-container" variants={containerVariants}>
         <motion.div className="project-child" variants={childVariants}>
-          <img src="https://via.placeholder.com/400x250" alt="Project 1" className="project-image" />
+          <img src={myprojects[0].img} alt="Project 1" className="project-image" />
+          <h2 className="project-title">Rock, Paper & Scissor</h2>
         
         </motion.div>
 
         <motion.div className="project-child" variants={childVariants}>
-          <img src="https://via.placeholder.com/400x250" alt="Project 2" className="project-image" />
-          <h3>Project 2</h3>
-          <p>Description for Project 2</p>
-          <a href="#" className="project-button">View Project</a>
+        <img src={myprojects[0].img} alt="Project 1" className="project-image" />
+         
         </motion.div>
 
         <motion.div className="project-child" variants={childVariants}>
-          <img src="https://via.placeholder.com/400x250" alt="Project 3" className="project-image" />
-          <h3>Project 3</h3>
-          <p>Description for Project 3</p>
-          <a href="#" className="project-button">View Project</a>
+        <img src={myprojects[0].img} alt="Project 1" className="project-image" />
         </motion.div>
       </motion.div>
     </motion.div>
