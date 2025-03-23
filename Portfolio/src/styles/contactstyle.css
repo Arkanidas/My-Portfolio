@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Archivo+Black&family=Carter+One&family=Dancing+Script:wght@471&family=Fugaz+One&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lexend+Deca:wght@100..900&family=Patua+One&family=Pinyon+Script&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Carter+One&display=swap');
 
 .carter-one-regular {
     font-family: "Carter One", serif;
@@ -6,31 +6,6 @@
     font-style: normal;
   }
   
-  .fugaz-one-regular {
-    font-family: "Fugaz One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .ibm-plex-mono-bold-italic {
-    font-family: "IBM Plex Mono", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  
-  .lexend-deca {
-    font-family: "Lexend Deca", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .patua-one-regular {
-    font-family: "Patua One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
 
   .archivo-black-regular {
     font-family: "Archivo Black", sans-serif;
@@ -206,10 +181,6 @@
   }
   
 
-  
-  
-
-  
   .title-2 {
     display: block;
     margin-top: -0.5rem;

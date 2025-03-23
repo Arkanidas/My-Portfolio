@@ -46,26 +46,15 @@ const myprojects = [
   },
 ];
 
-export default function Projects() {
+export default function Projects({count = 50}) {
   return (
+   
     <motion.div
-    className="Projects"
     initial="hidden"
     animate="visible"
   
   >
-      <div className="particle-container">
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-  </div>
+     
 
       <Navigation/>
       <div className="description-container">
@@ -76,6 +65,25 @@ export default function Projects() {
       </div>
 
       <motion.div className="project-container" variants={containerVariants}>
+      <div className="particle-container">
+  {Array.from({ length: count }).map((_, index) => {
+    const duration = Math.random() * (50 - 30) + 30; 
+    const delay = Math.random() * 5; 
+
+
+    return (
+      <div
+        key={index}
+        className="particle"
+        style={{
+          left: `${Math.random() * 100}%`,
+          animationDuration: `${duration}s`,
+          animationDelay: `${delay}s`,
+        }}
+      ></div>
+    );
+  })}
+</div>
         <motion.div className="project-child" variants={childVariants}>
           <img src={myprojects[0].img} alt="Project 1" className="project-image" />
           <h2 className="project-title">{myprojects[0].title}</h2>
@@ -105,6 +113,6 @@ export default function Projects() {
     </motion.div>
    
    
-   
+
   )
 }
