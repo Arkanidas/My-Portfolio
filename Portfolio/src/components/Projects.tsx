@@ -5,6 +5,7 @@ import pro from "../images/pro1.jpg"
 import bracket from "../images/brackets.png"
 import bildhistoria2 from "../images/bildhistoria2.png"
 
+
 interface Project {
   title: string;
   description: string;
@@ -67,7 +68,7 @@ export default function Projects({count = 50}) {
       <Navigation/>
       <div className="description-container">
       <h2 className="project-header">My Projects</h2>
-     
+    
       <p className="descriptions">Here are my Projects that I've been working with. Feel free to explore or send me suggestions for improvements</p>
       
       </div>
@@ -125,7 +126,7 @@ export default function Projects({count = 50}) {
             <div className="skill" style={{ backgroundColor: "#087ECE" }}>TypeScript</div>
             <div className="skill" style={{ backgroundColor: "#85CCD7", color:"black" }}>React</div>
             <div className="skill" style={{ backgroundColor: "#8A18FD", color:"white" }}>Bootstrap</div>
-            <div className="skill" style={{ backgroundColor: "none", color:"white", border:"1px solid black" }}>Docker</div>
+            <div className="skill" style={{ backgroundColor: "none", color:"black", border:"1.5px solid black" }}>Docker</div>
           </div>
 
           <p className="project-description">{myprojects[1].description}</p>

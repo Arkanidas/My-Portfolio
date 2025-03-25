@@ -364,12 +364,12 @@ html{
 
 .desc-title{
   text-align: left;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 17px;
+  padding: 5px;
   color: #c77eff;
   font-size: clamp(24px, 1.6vw, 40px);
   font-family: "Lexend Deca", serif;
-  padding-bottom: 10px;
+  padding-bottom: 1.5em;
   position: relative;
 }
 
@@ -393,6 +393,10 @@ html{
   margin-top: 50px;
 }
 
+.text-container1 .skills_info{
+  background-color: #222a3a;
+}
+
 .skill-description {
   margin-top: 30px; 
   color: #f8fafc;
@@ -408,6 +412,7 @@ html{
   background-color: #161d2b;
   cursor:default;
 }
+
 
 .skills_info:hover  {
   filter: contrast(95%);
@@ -558,7 +563,6 @@ html{
 
 .animated-button .arr-1 {
   right: 12px;
- 
 }
 
 .animated-button .arr-2 {
@@ -630,7 +634,6 @@ html{
   display: flex;
   flex-direction: row;
   width: 100%;
-
   height:auto;
   align-items: baseline;
   align-content: space-around;
@@ -649,7 +652,6 @@ html{
   left:1em;
   flex-wrap: wrap;
   visibility: hidden;
-
 }
 
 .react-icons{
@@ -785,6 +787,7 @@ html{
     flex-direction: row; 
     gap: calc(12px + 2vw);
     flex-wrap: wrap;
+   
 
   }
 
@@ -846,7 +849,7 @@ html{
 
 .desc-title{
   margin: 0;
-  padding:5px;
+  padding-bottom:1.5em;
 }
 
   .desc-paragraph{
