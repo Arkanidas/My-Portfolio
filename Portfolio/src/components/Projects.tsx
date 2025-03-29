@@ -149,10 +149,10 @@ export default function Projects({count = 50}) {
         <img src={myprojects[0].img} alt="Project 1" className="project-image" />
         <h2 className="project-title">{myprojects[2].title}</h2>
         <div className="skill-container">
-            <div className="skill" style={{ backgroundColor: "#087ECE" }}>TypeScript</div>
+            <div className="skill" style={{ backgroundColor: "#F7E025", color:"black"}}>Javascript</div>
             <div className="skill" style={{ backgroundColor: "#85CCD7", color:"black" }}>React</div>
-            <div className="skill" style={{ backgroundColor: "#8A18FD", color:"white" }}>Bootstrap</div>
-            <div className="skill" style={{ backgroundColor: "none", color:"black", border:"1.5px solid black" }}>Docker</div>
+            <div className="skill" style={{ backgroundColor: "#1B75B8", color:"white" }}>CSS</div>
+            <div className="skill" style={{ backgroundColor: "none", color:"black", border:"1.5px solid black" }}>Api</div>
           </div>
 
           <p className="project-description">{myprojects[2].description}</p>
