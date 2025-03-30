@@ -10,28 +10,14 @@ import useCanvasCursor from "./styles/landingcursor";
 
 
 function Landing() {
-  const text = React.useRef(null);
   useCanvasCursor(); 
-
-// disable the console for the user to avoid page issues 
-//document.addEventListener("contextmenu", (event) => event.preventDefault()); 
-
-  //document.addEventListener("keydown", (event) => {
-   // if (event.ctrlKey && (event.key === "u" || event.key === "U")) { 
-   //     event.preventDefault();
-  //  }
-  //  if (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) { 
-  //      event.preventDefault();
-  //  }
-  //  if (event.key === "F12") { 
-  //      event.preventDefault();
-  //  }
-//});
+  const [isTypingActive, setIsTypingActive] = React.useState(false);
+  const textRef = React.useRef(null);
 
 const borderchange = (): void =>{
 
   const borders:string[] = ["dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset",];
-  const randborder:number = Math.floor(Math.random() * 9);
+  const randborder:number = Math.floor(Math.random() * borders.length);
 
   const randcolor:string = Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");  
   const profile:HTMLElement = document.querySelector(".profile_img") as HTMLElement;
@@ -52,21 +38,33 @@ const scrollDown = () => {
   });
 };
 
-  React.useEffect(() => {
-    const typed = new Typed(text.current, {
-      strings: ['Hi I am a Frontend Developer', 'I create Web applications'],
-      typeSpeed: 40,
-      backSpeed: 60,
-      startDelay: 500,
-      backDelay: 4000,
-      showCursor: false,
-      loop: true,
-    });
 
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+
+
+React.useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting && !isTypingActive) {
+        setIsTypingActive(true);
+        const typed = new Typed(textRef.current, {
+          strings: ['Hi I am a Frontend Developer', 'I create Web applications'],
+          typeSpeed: 40,
+          backSpeed: 60,
+          startDelay: 500,
+          backDelay: 4000,
+          showCursor: false,
+          loop: true,
+        });
+
+        return () => typed.destroy();
+      }
+    },
+    { threshold: 0.1 }
+  );
+
+  if (textRef.current) observer.observe(textRef.current);
+  return () => observer.disconnect();
+}, [isTypingActive]);
 
   
   return (
@@ -83,9 +81,9 @@ const scrollDown = () => {
   transition={{ duration: 2, ease: "easeOut", type: "spring", stiffness: 120 }}>
 
   <h1 className="name">Leon Alexander Aysa</h1>
-  <h3 ref={text} className="description" />
+  <h3 ref={textRef} className="description" />
   <div className="profile_wrapper">
-  <img onClick={borderchange} src={profile} className="profile_img" alt="Profile"/>
+  <img onClick={borderchange} src={profile} className="profile_img" alt="Profile" loading="lazy"/>
   </div>
 
 </motion.div>
