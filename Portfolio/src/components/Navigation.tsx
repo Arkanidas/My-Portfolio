@@ -23,8 +23,7 @@ const Navigation = () => {
   initial={{ opacity: 0, y: -200 }} 
   animate={{ opacity: 1, y: 0, x: 0 }} 
   transition={{ duration: 1, ease: "easeOut"}} 
-
- >
+>
       <div className="Navigation">
         <div
           className={`hamburger-menu ${MenuActive ? "burger-active" : ""}`}
@@ -43,8 +42,8 @@ const Navigation = () => {
           </li>
           <li>
           <Link to="/projects" className="link-paragraph">
-              Projects
-            </Link>
+            Projects
+          </Link>
         
           </li>
         </ul>

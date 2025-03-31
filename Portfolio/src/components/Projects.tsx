@@ -49,7 +49,7 @@ const myprojects:Project[] = [
   },
   {
     title: "IMDB Api Project",
-    description: "This is a description of project 3.",
+    description: "This is a project where I used the IMDB Api to fetch movies and its content to display them on the website.",
     img: "https://via.placeholder.com/400x250",
     link_prev: "#",
     link_github: "#",
