@@ -64,7 +64,6 @@ export default function Projects({count = 50}) {
     animate="visible"
   
   >
-     
       <Navigation/>
       <div className="description-container">
       <h2 className="project-header">My Projects</h2>
@@ -78,7 +77,6 @@ export default function Projects({count = 50}) {
   {Array.from({ length: count }).map((_, index) => {
     const duration = Math.random() * (50 - 30) + 50; 
     const delay = Math.random() * 3; 
-
 
     return (
       <div
@@ -104,21 +102,18 @@ export default function Projects({count = 50}) {
 
           <p className="project-description">{myprojects[0].description}</p>
 
-          <div className="button-container">
-         <a href={myprojects[1].link_github}>
+         <div className="button-container">
+           <a href={myprojects[1].link_github}>
          <div className="github-button"><img src={bracket} style={{width:"30px", height:"30px", marginTop:"10%"}}></img></div>
-         </a>
+           </a>
 
-          <a href={myprojects[1].link_prev}>
+           <a href={myprojects[1].link_prev}>
          <div className="prev-button">Live Preview <div className="live-icon"></div></div>
-         </a>
+           </a>
          
          </div>
-         
         </motion.div>
 
-
-        
         <motion.div className="project-child" variants={childVariants}  whileHover={{ scale: 1.05 }}>
         <img src={myprojects[1].img} style={{}}alt="Project 1" className="project-image" />
           <h2 className="project-title">{myprojects[1].title}</h2>
@@ -132,18 +127,15 @@ export default function Projects({count = 50}) {
           <p className="project-description">{myprojects[1].description}</p>
 
           <div className="button-container">
-          <a href={myprojects[1].link_github}>
-         <div className="github-button"><img src={bracket} style={{width:"30px", height:"30px", marginTop:"10%"}}></img></div>
-         </a>
+           <a href={myprojects[1].link_github}>
+            <div className="github-button"><img src={bracket} style={{width:"30px", height:"30px", marginTop:"10%"}}></img></div>
+           </a>
                
-          <a href={myprojects[1].link_prev}>
-         <div className="prev-button">Live Preview <div className="live-icon"></div></div>
-         </a>
+           <a href={myprojects[1].link_prev}>
+            <div className="prev-button">Live Preview <div className="live-icon"></div></div>
+           </a>
           </div>
         </motion.div>
-
-
-
 
         <motion.div className="project-child" variants={childVariants}  whileHover={{ scale: 1.05 }}>
         <img src={myprojects[0].img} alt="Project 1" className="project-image" />
@@ -167,7 +159,6 @@ export default function Projects({count = 50}) {
          </a>
           </div>
         </motion.div>
-
       </motion.div>
     </motion.div>
    
