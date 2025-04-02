@@ -48,12 +48,23 @@ const myprojects:Project[] = [
     link_github: "https://github.com/svenskt-portrattarkiv/bildhistoria",
   },
   {
-    title: "IMDB Api Project",
-    description: "This is a project where I used the IMDB Api to fetch movies and its content to display them on the website.",
+    title: "Movie App",
+    description: "This is a project where I used the IMDB Api to display movies and its content to the web page for the user to explore.",
     img: "https://via.placeholder.com/400x250",
     link_prev: "#",
     link_github: "#",
   },
+  {
+    title: "Sole Soul ShoeStore",
+    description: "Sole Soul is a fictional shoe store where you can buy the shoes from your dream. This project is built to replicate the experience of a real web store",
+    img: "https://via.placeholder.com/400x250",
+    link_prev: "#",
+    link_github: "https://github.com/tobionesies/gruppuppgift-webshop-let",
+  },
+  
+
+
+
 ];
 
 export default function Projects({count = 50}) {
