@@ -170,6 +170,29 @@ export default function Projects({count = 50}) {
          </a>
           </div>
         </motion.div>
+
+        <motion.div className="project-child" variants={childVariants}  whileHover={{ scale: 1.05 }}>
+        <img src={myprojects[0].img} alt="Project 1" className="project-image" />
+        <h2 className="project-title">{myprojects[3].title}</h2>
+        <div className="skill-container">
+            <div className="skill" style={{ backgroundColor: "#F7E025", color:"black"}}>Javascript</div>
+            <div className="skill" style={{ backgroundColor: "#85CCD7", color:"black" }}>React</div>
+            <div className="skill" style={{ backgroundColor: "#1B75B8", color:"white" }}>CSS</div>
+            <div className="skill" style={{ backgroundColor: "none", color:"black", border:"1.5px solid black" }}>Api</div>
+          </div>
+
+          <p className="project-description">{myprojects[3].description}</p>
+
+          <div className="button-container">
+          <a href={myprojects[3].link_github}>
+         <div className="github-button"><img src={bracket} style={{width:"30px", height:"30px", marginTop:"10%"}}></img></div>
+         </a>
+               
+          <a href={myprojects[3].link_prev}>
+         <div className="prev-button">Live Preview <div className="live-icon"></div></div>
+         </a>
+          </div>
+        </motion.div>
       </motion.div>
     </motion.div>
    
