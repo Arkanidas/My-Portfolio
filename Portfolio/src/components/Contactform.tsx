@@ -55,7 +55,6 @@ const [formData, setFormData] = useState({
   }
 
 
-
     const templateParams = {
         from_name: formData.name,  
         from_email: formData.email, 
@@ -161,22 +160,11 @@ const [formData, setFormData] = useState({
      
    </form>
 
-
    <Toaster
   position="bottom-center"
   reverseOrder={true}
 />
 
   </div>
-
-
-
-     
-
-
-
-
-
-  
   )
 }

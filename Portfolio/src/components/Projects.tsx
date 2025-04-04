@@ -14,6 +14,7 @@ interface Project {
   link_github: string;
 }
 
+
 const containerVariants = {
   hidden: { opacity: 0,},
   visible: {
@@ -55,7 +56,7 @@ const myprojects:Project[] = [
     link_github: "#",
   },
   {
-    title: "Sole Soul ShoeStore",
+    title: "SoleSoul Shoestore",
     description: "Sole Soul is a fictional shoe store where you can buy the shoes from your dream. This project is built to replicate the experience of a real web store",
     img: "https://via.placeholder.com/400x250",
     link_prev: "#",

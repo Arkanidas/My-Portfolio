@@ -64,7 +64,6 @@ export default function About() {
               descTitle.classList.remove("flippedTitle");
           }
       }
-
       return newFlipped;
   });
 
