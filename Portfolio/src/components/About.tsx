@@ -264,15 +264,15 @@ return () => removeEventListener("resize", handleResize)
           <FaDiscord className="react-icons"/>
           </a>
 
-           </div>
+            </div>
            </div> 
           <p className="desc-paragraph">
           
-My name is Léon Aysa, a 26 year old freelance web developer from Sweden. I specialize in designing and developing innovative digital solutions, continuously refining my skills through new and exciting projects. My primary focus is not only on expanding my expertise but also on helping clients bring their vision to life by creating high quality, customized websites.
+My name is Léon Aysa, a 26 year old freelance web developer from Sweden. I specialize in designing and developing innovative digital solutions, continuously refining my skills through new and exciting projects which made me create my freelance company CodeXynapse. My primary focus is not only on expanding my expertise by creating useful apps but also on helping clients bring their vision to life by creating high quality customized websites.
 <br/><br/>
 As an individual I can be seen as being spontaneous, tenacious and open minded. My interests include basketball &#127936;, table tennis &#127955;, travel &#127758;, video games &#127918; and IT/tech &#128187; 
 <br/><br/>
-I’m open to new opportunities where I can contribute, learn, and grow. If you have a role that aligns with my skills and experience, please feel free to reach out down below or one of my social medias. I would love to connect and discuss how I can add value to your team or project &#128515;
+I’m open to new opportunities where I can contribute, learn, and grow. If you have a role that aligns with my skills and experience, please feel free to reach out down below or on one of my social medias. I would love to connect and discuss how I can add value to your team or project &#128515;
 
 </p>
         <div className="about_btns">
@@ -304,25 +304,12 @@ I’m open to new opportunities where I can contribute, learn, and grow. If you 
 </svg>
 
 </button>
-
          </div>
-
         </div>
-      )}
-
-
-
-
-  </div>
-
-  </div>
-
-</div>
-
-
-
-
-
+      )}  
+     </div>
+    </div>
+   </div>
 
 
   <div className="Myskills">
@@ -359,7 +346,7 @@ I’m open to new opportunities where I can contribute, learn, and grow. If you 
       </button>
     </div>
   
-    <div className="footer">
+<div className="footer">
   <div className="code">
     <div className="icon">
       <svg
@@ -422,21 +409,13 @@ I’m open to new opportunities where I can contribute, learn, and grow. If you 
 <h4 className="skills_info">Firebase <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 48 48">
 <path fill="#ff8f00" d="M8,37L23.234,8.436c0.321-0.602,1.189-0.591,1.494,0.02L30,19L8,37z"></path><path fill="#ffa000" d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z"></path><path fill="#ff6f00" d="M8.008 36.986L8.208 36.829 25.737 22.488 20.793 13.012z"></path><path fill="#ffc400" d="M8,37l26.666-25.713c0.559-0.539,1.492-0.221,1.606,0.547L40,37l-15,8.743 c-0.609,0.342-1.352,0.342-1.961,0L8,37z"></path>
 </svg></h4>
+        </div>
+       </div>
       </div>
+     </div>
     </div>
-  </div>
-</div>
-</div>
-   
-
+   </div>
   </div>
  </div>
-
-
-
-  </div>
-
- 
-    </div>
-  )
-}
+</div>
+  )}

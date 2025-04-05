@@ -27,6 +27,7 @@
     top:0;
     height:100vh;
     background: linear-gradient(360deg, hsl(287, 82%, 36%) 0%, hsl(268, 88%, 80%) 0%, hsl(278, 73%, 53%) 100%);
+  
 }
 
 .link-paragraph{
@@ -56,10 +57,7 @@ html{
     width: 100%;
     position: relative;
     top:0;
-    z-index: 10000;
-
 }
-
 
 a, a:visited{
  text-decoration: none;
@@ -93,7 +91,14 @@ z-index:1;
   align-items: center;
 }
 
-
+.logo{
+  width: 200px;
+  height: 140px;
+  position: absolute;
+  z-index: 0;
+  top:-5px;
+  left:20px;
+}
 
 .profile_wrapper::after {
   content: "Click me";
@@ -139,15 +144,12 @@ z-index:1;
 }
 
 
-
 .center-con {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   top:18%;
-  
-
 }
 
 .round {
@@ -167,7 +169,6 @@ z-index:1;
 
   50% {
     transform: translateY(-10px); 
-    
   }
 
   100% {
@@ -276,7 +277,6 @@ opacity: 1;
   width: 100%; 
 }
 
-
 .Contact{
     width: 100%;
     height:100vh;
@@ -290,11 +290,10 @@ opacity: 1;
     display: none;  
 }
 
-
-
 .hamburger-menu {
     display: none;
     cursor: pointer;
+    
   }
 
   .bar {
@@ -305,7 +304,6 @@ opacity: 1;
     margin: 4px 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
- 
   }
 
   @media screen and (max-width: 770px) {
@@ -318,18 +316,21 @@ opacity: 1;
       margin-right:20px;
       margin-top: 30px;
       padding:7px;
-    
-    
+      
+    }
+
+    .burger-active{
+      z-index: 100;
+      position:relative;
     }
 
     .burger-active .bar{
        background-color:rgb(0, 0, 0);
-
     }
+
 
     .burger-active .bar:nth-child(1){
       transform: translateY(11px) rotate(45deg);
-   
     }
 
     .burger-active .bar:nth-child(2){
@@ -340,7 +341,6 @@ opacity: 1;
       transform: translateY(-11px) rotate(-45deg);
     }
 
-  
     .Link-selection {
       display: none;
     }
@@ -354,7 +354,7 @@ opacity: 1;
       float:right;
       font-size: 20px;
       position: fixed;
-      z-index:-1;
+      z-index:1;
       top:0px;
       right:0px;
       margin:0;
@@ -374,9 +374,6 @@ opacity: 1;
        padding-top:15px;
        padding-bottom:15px;
        animation: none;
-   
-      
-       
     }
 
     .link-paragraph:hover{
@@ -390,14 +387,12 @@ opacity: 1;
       border: 5px solid black;  
     }
   
-
-
     .center-con {
       top:30%;
     }
 
     .link-paragraph::after {
-   content:none;
+      content:none;
      
     }
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom"; 
 import "../styles/landingstyle.css";
 import { motion } from "framer-motion";
-
+import logo from "../images/logga7.png"
 
 
 const Navigation = () => {
@@ -25,6 +25,9 @@ const Navigation = () => {
   transition={{ duration: 1, ease: "easeOut"}} 
 >
       <div className="Navigation">
+        <Link to="/">
+      <img src={logo} alt="Logo" className="logo" />
+      </Link>
         <div
           className={`hamburger-menu ${MenuActive ? "burger-active" : ""}`}
           onClick={Togglemenu}
@@ -35,6 +38,7 @@ const Navigation = () => {
         </div>
 
         <ul className={`Link-selection ${showLinks ? "show-links" : ""}`}>
+
           <li>
           <Link to="/" className="link-paragraph">
               Home

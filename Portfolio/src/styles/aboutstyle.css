@@ -380,8 +380,9 @@ html{
   font-family: "Patua One", serif;
   font-size: 14px;
   color: #d1d1d1;
-  word-spacing: 3px;
+  word-spacing: 5px;
   word-break:keep-all;
+  margin-top: -15px;
 }
 
 
