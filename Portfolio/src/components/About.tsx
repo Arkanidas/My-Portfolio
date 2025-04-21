@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
-import cv from "../documents/Resume - Leon Aysa.pdf"
+import cv from "../documents/CV - Leon Aysa.pdf"
 
 
 export default function About() {

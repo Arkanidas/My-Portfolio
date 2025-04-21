@@ -14,7 +14,7 @@ function Landing() {
   const [isTypingActive, setIsTypingActive] = React.useState(false);
   const textRef = React.useRef(null);
 
-const borderchange = (): void =>{
+const borderchange = (): void => {
 
   const borders:string[] = ["dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset",];
   const randborder:number = Math.floor(Math.random() * borders.length);
