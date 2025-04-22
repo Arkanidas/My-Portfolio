@@ -81,6 +81,7 @@ z-index:1;
   border: 7px solid black;  
   cursor: pointer;
   border-color: #000000;
+  background-size: cover;
 }
 
 .profile_wrapper {
