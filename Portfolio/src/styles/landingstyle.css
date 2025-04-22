@@ -76,12 +76,13 @@ z-index:1;
 
 .profile_img{
   width: 250px;
-  height: 250px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: 7px solid black;  
   cursor: pointer;
   border-color: #000000;
-  background-size: cover;
+  background-clip: border-box;
+  object-fit: cover;
 }
 
 .profile_wrapper {

@@ -51,21 +51,12 @@ const myprojects:Project[] = [
     link_github: "https://github.com/svenskt-portrattarkiv/bildhistoria",
   },
   {
-    title: "Movie App",
+    title: " CinemaXynapse - Movie App",
     description: "This is a project where I used the IMDB Api to display movies and its content to the web page for the user to explore.",
     img: movieapp,
     link_prev: "https://movie-app-phi-lemon.vercel.app/",
     link_github: "https://github.com/Arkanidas/Movie-App",
   },
-  {
-    title: "SoleSoul Shoestore",
-    description: "Sole Soul is a fictional shoe store where you can buy the shoes from your dream. This project is built to replicate the experience of a real web store",
-    img: "https://via.placeholder.com/400x250",
-    link_prev: "#",
-    link_github: "#",
-  },
-  
-
 ];
 
 export default function Projects({count = 50}) {
@@ -86,9 +77,9 @@ export default function Projects({count = 50}) {
 
       <motion.div className="project-container" variants={containerVariants}>
       <div className="particle-container">
-  {Array.from({ length: count }).map((_, index) => {
-    const duration = Math.random() * (50 - 30) + 50; 
-    const delay = Math.random() * 3; 
+      {Array.from({ length: count }).map((_, index) => {
+      const duration = Math.random() * (50 - 30) + 50; 
+      const delay = Math.random() * 3; 
 
     return (
       <div
@@ -115,11 +106,11 @@ export default function Projects({count = 50}) {
           <p className="project-description">{myprojects[0].description}</p>
 
          <div className="button-container">
-           <a href={myprojects[1].link_github}>
+           <a href={myprojects[0].link_github}>
          <div className="github-button"><img src={bracket} style={{width:"30px", height:"30px", marginTop:"10%"}}></img></div>
            </a>
 
-           <a href={myprojects[1].link_prev}>
+           <a href={myprojects[0].link_prev}>
          <div className="prev-button">Live Preview <div className="live-icon"></div></div>
            </a>
          
@@ -150,7 +141,7 @@ export default function Projects({count = 50}) {
         </motion.div>
 
         <motion.div className="project-child" variants={childVariants}  whileHover={{ scale: 1.05 }}>
-        <img src={myprojects[0].img} alt="Project 1" className="project-image" />
+        <img src={myprojects[2].img} alt="Project 1" className="project-image" />
         <h2 className="project-title">{myprojects[2].title}</h2>
         <div className="skill-container">
             <div className="skill" style={{ backgroundColor: "#F7E025", color:"black"}}>Javascript</div>
@@ -162,11 +153,11 @@ export default function Projects({count = 50}) {
           <p className="project-description">{myprojects[2].description}</p>
 
           <div className="button-container">
-          <a href={myprojects[1].link_github}>
+          <a href={myprojects[2].link_github}>
          <div className="github-button"><img src={bracket} style={{width:"30px", height:"30px", marginTop:"10%"}}></img></div>
          </a>
                
-          <a href={myprojects[1].link_prev}>
+          <a href={myprojects[2].link_prev}>
          <div className="prev-button">Live Preview <div className="live-icon"></div></div>
          </a>
           </div>

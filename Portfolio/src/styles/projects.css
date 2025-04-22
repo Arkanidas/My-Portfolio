@@ -192,8 +192,9 @@
     box-shadow: 2px 4px 8px rgba(174, 174, 174, 0.455); 
 }
 
-.github-button:active{
-  transform: translateY(1px);
+.github-button:active, .prev-button:active{
+    transform: translateY(1px);
+    transform: translateY(1px);
 }
 
 .github-button:after {
@@ -210,14 +211,6 @@
     z-index: -1; 
 }
 
-.speaker{
-    cursor: pointer;
-    position:absolute;
-    width: 50px;
-    height: 50px;
-   left:200px;
-   top:140px;
-}
 
 .github-button:hover:after {
     transform: scaleX(1.5); 
@@ -241,9 +234,7 @@
     box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.369); 
 }
 
-.prev-button:active{
-  transform: translateY(1px);
-}
+
 
 .prev-button:after {
     content: "";
@@ -335,6 +326,8 @@
     border-top-right-radius: 17px;
     display: block;
     margin: 10px auto 0 auto; 
+    object-fit: cover;
+    border-bottom: 2px outset rgba(255, 255, 255, 0.462);
 }
 
 /* smaller screens/laptop devices */
