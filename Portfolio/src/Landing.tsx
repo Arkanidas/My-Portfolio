@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../src/components/Navigation';
 import Typed from 'typed.js';
 import "./styles/landingstyle.css";
-import profile from "./images/profile2.jpg";
+import profile from "./images/profile2.png";
 import { motion } from "framer-motion";
 import useCanvasCursor from "./styles/landingcursor"; 
 
