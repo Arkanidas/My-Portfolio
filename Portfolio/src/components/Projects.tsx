@@ -1,5 +1,5 @@
 import Navigation from "./Navigation"
-import "../styles/Projects.css"
+import "../styles/projects.css"
 import { motion} from "framer-motion";
 import pro from "../images/pro1.jpg"
 import bracket from "../images/brackets.png"
