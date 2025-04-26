@@ -26,7 +26,7 @@ const Navigation = () => {
 >
       <div className="Navigation">
         <Link to="/">
-      <img src={logo} alt="Logo" className="logo" />
+      <img src={logo} alt="Logo" className="logo" loading="lazy"/>
       </Link>
         <div
           className={`hamburger-menu ${MenuActive ? "burger-active" : ""}`}

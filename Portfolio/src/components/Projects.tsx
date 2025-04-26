@@ -95,7 +95,7 @@ export default function Projects({count = 50}) {
   })}
 </div>
         <motion.div className="project-child" variants={childVariants}  whileHover={{ scale: 1.05 }}>
-          <img src={myprojects[0].img} alt="Project 1" className="project-image" />
+          <img src={myprojects[0].img} alt="Project 1" className="project-image" loading="lazy" />
           <h2 className="project-title">{myprojects[0].title}</h2>
           <div className="skill-container">
             <div className="skill" style={{ backgroundColor: "#E3552B" }}>HTML</div>
@@ -118,7 +118,7 @@ export default function Projects({count = 50}) {
         </motion.div>
 
         <motion.div className="project-child" variants={childVariants}  whileHover={{ scale: 1.05 }}>
-        <img src={myprojects[1].img} style={{}}alt="Project 1" className="project-image" />
+        <img src={myprojects[1].img} style={{}}alt="Project 1" className="project-image" loading="lazy" />
           <h2 className="project-title">{myprojects[1].title}</h2>
           <div className="skill-container">
             <div className="skill" style={{ backgroundColor: "#087ECE" }}>TypeScript</div>
@@ -141,7 +141,7 @@ export default function Projects({count = 50}) {
         </motion.div>
 
         <motion.div className="project-child" variants={childVariants}  whileHover={{ scale: 1.05 }}>
-        <img src={myprojects[2].img} alt="Project 1" className="project-image" />
+        <img src={myprojects[2].img} alt="Project 1" className="project-image" loading="lazy" />
         <h2 className="project-title">{myprojects[2].title}</h2>
         <div className="skill-container">
             <div className="skill" style={{ backgroundColor: "#F7E025", color:"black"}}>Javascript</div>

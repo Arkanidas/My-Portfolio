@@ -521,15 +521,19 @@ html{
   transform: translate(10px, -10px);
 }
 
+
+
 .about_btns{
   display: flex;
   gap: min(5vw, 35px); 
   padding:30px;
   justify-content:center;
   align-content: space-between;
-
-
+  flex-direction: row;
 }
+
+
+
 
 .animated-button {
   position: relative;
@@ -897,5 +901,34 @@ html{
  filter: contrast(50%);
  cursor: pointer;
 }
+
+}
+
+@media (max-width: 390px) {
+  .desc-title{
+ font-size:clamp(20px, 1.8vw, 30px);
+
+  }
+
+  .react-icons{
+    width: 14px;
+    height: 14px;
+  }
+
+  .about_btns{
+    flex-direction: column;
+    left:50%;
+   
+  }
+
+  .animated-button {
+    max-width: 500px;
+  }
+
+  .animated-button:hover .circle1 {
+    width: 400px;
+    height: 400px;
+   
+  }
 
 }
