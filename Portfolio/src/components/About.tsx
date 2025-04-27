@@ -4,7 +4,6 @@ import Typed from 'typed.js';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
 import cv from "../documents/Léon - cv.pdf"
 
 
