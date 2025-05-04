@@ -326,7 +326,7 @@
     border-top-right-radius: 17px;
     display: block;
     margin: 10px auto 0 auto; 
-    object-fit: cover;
+  
     border-bottom: 2px outset rgba(255, 255, 255, 0.462);
 }
 

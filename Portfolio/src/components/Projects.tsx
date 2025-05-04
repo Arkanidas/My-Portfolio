@@ -1,11 +1,10 @@
 import Navigation from "./Navigation"
 import "../styles/temp.css"
 import { motion} from "framer-motion";
-import pro from "../images/pro1.jpg"
 import bracket from "../images/brackets.png"
 import bildhistoria2 from "../images/bildhistoria2.png"
 import movieapp from "../images/movieapp.png"
-
+import game from '../images/game.png'
 
 
 interface Project {
@@ -39,9 +38,9 @@ const myprojects:Project[] = [
   {
     title: "Rock, Paper & Scissor",
     description: "This is a classic Rock, Paper & Scissor game. It is built using HTML, CSS and Javascript. Battle against the computer and see who wins.",
-    img: pro, 
-    link_prev: "#",
-    link_github: "#",
+    img: game, 
+    link_prev: "https://rock-paper-scissor-game-lake-six.vercel.app/",
+    link_github: "https://github.com/Arkanidas/Rock_Paper_Scissor_Game",
   },
   {
     title: "Bildhistoria",
