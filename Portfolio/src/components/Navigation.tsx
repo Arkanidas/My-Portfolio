@@ -10,8 +10,6 @@ const Navigation = () => {
   const [MenuActive, setMenuActive] = useState<boolean>(false);
 
 
-
-
   const Togglemenu = () => {
     setShowLinks(!showLinks);
     setMenuActive(!MenuActive);
