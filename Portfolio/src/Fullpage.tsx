@@ -10,9 +10,6 @@ import "./styles/landingstyle.css";
 
 export default function Fullpage() {
 
-
-
-
   return (
     <Routes>
       {/* FullPage Sections */}

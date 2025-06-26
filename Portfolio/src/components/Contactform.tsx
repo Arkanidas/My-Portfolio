@@ -23,9 +23,6 @@ const [formData, setFormData] = useState({
   });
 
 
-  
-
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -72,7 +69,7 @@ const [formData, setFormData] = useState({
     ).then(
       (response) => {
         
-        console.log("Message was sent Successfully with response: " + response)
+        console.log("Message was sent Successfully! " + response)
         setFormData({ name: "", email: "", message: "" });
         submitText.innerText = "Send";
         toast("Message Sent Sucessfully!", {
