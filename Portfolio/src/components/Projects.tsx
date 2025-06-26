@@ -46,7 +46,7 @@ const myprojects:Project[] = [
     title: "Bildhistoria",
     description: "Bildhistoria - Sweden's largest place for copyright free historical photographs. Together with backend, frontend and cloud developers we have created Bildhistoria for everyone to use & explore ",
     img: bildhistoria2,
-    link_prev: "https://bildhistoria.se/",
+    link_prev: "https://blogg.bildhistoria.se/projektet-bildhistoria-avvecklas/",
     link_github: "https://github.com/svenskt-portrattarkiv/bildhistoria",
   },
   {
