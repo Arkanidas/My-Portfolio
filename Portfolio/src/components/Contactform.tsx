@@ -30,6 +30,8 @@ const [formData, setFormData] = useState({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+console.log("Service ID:", serviceId, "Template ID:", templateId, "User ID:", userId);
+
     const lastSubmit = localStorage.getItem("lastSubmission");
 
   if (lastSubmit) {
