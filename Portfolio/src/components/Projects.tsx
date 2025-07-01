@@ -85,7 +85,7 @@ export default function Projects({count = 50}) {
         key={index}
         className="particle"
         style={{
-          left: `${Math.random() * 100}%`,
+          left: `${Math.random() * 99}%`,
           animationDuration: `${duration}s`,
           animationDelay: `${delay}s`,
         }}
