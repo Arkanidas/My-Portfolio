@@ -904,7 +904,7 @@ html{
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 404px) {
   .desc-title{
  font-size:clamp(20px, 1.8vw, 30px);
 
